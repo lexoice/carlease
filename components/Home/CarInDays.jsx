@@ -1,5 +1,5 @@
 import React from "react";
-import ImageWithLoader from "../UI/ImageWithLoader";
+
 
 const CarInDays = () => {
   return (

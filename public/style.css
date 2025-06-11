@@ -1694,8 +1694,10 @@ input:focus {
 }
 
 .banner-car img {
-    display: block;
-    width: 75%;
+    display: block !important;
+    width: 75% !important;
+    max-height: 470px;
+    max-width: fit-content;
     margin: 0 auto;
     text-align: center;
     object-fit: cover;
