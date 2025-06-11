@@ -1,5 +1,3 @@
-// pages/application.js
-
 import { useState } from 'react'
 import Seo from '../components/UI/Seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
@@ -16,12 +14,12 @@ export default function ApplicationPage() {
             <Seo
                 title={
                     formType === 'personal'
-                        ? 'Personal Credit Application | eAutoLease'
-                        : 'Business Credit Application | eAutoLease'
+                        ? `Personal Credit Application | ${process.env.NEXT_PUBLIC_SITE_NAME}`
+                        : `Business Credit Application | ${process.env.NEXT_PUBLIC_SITE_NAME}`
                 }
-                description="Fill out our secure credit application and get a quote from eAutoLease.com."
-                canonical={`https://www.eautolease.com/application`}
-                ogUrl={`https://www.eautolease.com/application`}
+                description={`Fill out our secure credit application and get a quote from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application`}
             />
 
             <Breadcrumbs />
@@ -38,7 +36,7 @@ export default function ApplicationPage() {
                             In order to assist you in a timely manner please fill out all the
                             required fields of the credit application and any other details which
                             pertain to you. A lease specialist will contact you with approval and
-                            price information. eAutoLease.com is a positive SSL secured website.
+                            price information. {process.env.NEXT_PUBLIC_SITE_NAME} is a positive SSL secured website.
                             Before proceeding with the interactive application, please read the
                             Terms & Conditions.
                         </p>

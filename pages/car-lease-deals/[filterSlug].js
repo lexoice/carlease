@@ -1,5 +1,3 @@
-// pages/car-lease-deals/[filterSlug].js
-
 import React from 'react'
 import Seo from '../../components/UI/Seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
@@ -21,7 +19,7 @@ export default function DealsByFilterPage({
   return (
     <>
       <Seo
-        title={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Deals | eAutoLease`}
+        title={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Deals | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
         description={`Explore the best ${base} lease deals in NYC and nearby areas.`}
         canonical={canonicalUrl}
         ogUrl={canonicalUrl}

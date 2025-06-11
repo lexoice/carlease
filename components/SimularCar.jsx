@@ -1,5 +1,3 @@
-// components/SimularCar.jsx
-
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import { getDeals } from '../lib/api/getDeals'

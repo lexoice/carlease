@@ -1869,7 +1869,7 @@ input:focus {
 
 .about-sec {
     position: relative;
-    z-index: 2;
+    z-index: 232;
 }
 
 .about-sec::before {

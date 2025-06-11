@@ -6,10 +6,10 @@ export default function AccessibilityPage() {
     return (
         <>
             <Seo
-                title="Business Car Leasing"
-                description="Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from eAutoLease. No hidden fees."
-                canonical="https://www.eautolease.com/services/trade-ins/"
-                ogUrl="https://www.eautolease.com/services/trade-ins/"
+                title={`Business Car Leasing | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/business-leasing/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/business-leasing/`}
             />
 
             <Breadcrumbs />
@@ -18,7 +18,7 @@ export default function AccessibilityPage() {
                 <main className="main-inner">
                     <h1>Business Car Leasing</h1>
 
-                        <p>Experience our extensive selection of commercial vehicles with competitive discounts available nationwide. Contact us today to initiate your journey and craft a personalized business leasing solution. Discover exclusive eAutoLease.com promotions, special rates, and incentives across Brooklyn, Long Island, New York City, Queens, and Staten Island.</p>
+                        <p>Experience our extensive selection of commercial vehicles with competitive discounts available nationwide. Contact us today to initiate your journey and craft a personalized business leasing solution. Discover exclusive {process.env.NEXT_PUBLIC_SITE_NAME} promotions, special rates, and incentives across Brooklyn, Long Island, New York City, Queens, and Staten Island.</p>
 
                         <div className="pa_business_wrapper">
                             <div className="pa_business_block">
@@ -27,7 +27,7 @@ export default function AccessibilityPage() {
                                 </div>
                                 <div className="pa_content">
                                     <h2>Business Vehicle Solutions</h2>
-                                    <p>Our commercial leasing solutions cater to businesses of every size. With an extensive inventory spanning various models and specifications, we're equipped to meet your professional requirements. Reach out to eAutoLease to begin your journey.</p>
+                                    <p>Our commercial leasing solutions cater to businesses of every size. With an extensive inventory spanning various models and specifications, we're equipped to meet your professional requirements. Reach out to {process.env.NEXT_PUBLIC_SITE_NAME} to begin your journey.</p>
                                     <ul>
                                         <li>Efficiency: From small enterprises to large corporations, we accommodate all business scales.</li>
                                         <li>Customization: We craft lease arrangements that align perfectly with your business model.</li>

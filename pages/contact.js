@@ -1,5 +1,3 @@
-// pages/contact.js
-
 import Seo from '../components/UI/Seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 import SingleCarForm from '../components/SingleCarForm'
@@ -8,10 +6,10 @@ export default function ContactPage() {
     return (
         <>
             <Seo
-                title="Contact Us | Brooklyn Lease Deals"
-                description="Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from New York's top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx."
-                canonical="https://www.eautolease.com/contact"
-                ogUrl="https://www.eautolease.com/contact"
+                title={`Contact Us | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from New York's top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/contact`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/contact`}
             />
 
 
@@ -27,7 +25,7 @@ export default function ContactPage() {
                             most extensive vehicle leasing inventory available throughout New York,
                             New Jersey, Pennsylvania, and Connecticut. You won't find any high-priced
                             real estate that holds this extensive inventory, which is why you'll
-                            save money when you lease from eCarLease.com.
+                            save money when you lease from ((DomainName)).
                         </p>
                     </div>
                     <div className="inner-banner-right-area">
@@ -70,7 +68,7 @@ export default function ContactPage() {
                             <p>
                                 Your time is valuable. With easy, clear communication, you'll get the
                                 answers you need to make a quick decision. So don't hesitate to contact
-                                the sales and service professionals at eCarLease.com for honest, timely
+                                the sales and service professionals at ((DomainName)) for honest, timely
                                 answers. You'll find quick responses during our normal Sales and Service
                                 operating times, seven days a week.
                             </p>

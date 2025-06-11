@@ -11,7 +11,7 @@ const SameCar = () => {
 
                 <div className="difference-car-head">
                     <div className="differ-left flex-1">
-                        <p>((DomainName))</p>
+                        <p>{process.env.NEXT_PUBLIC_SITE_NAME}</p>
                     </div>
                     <div className="vs">
                         <span>VS</span>
@@ -55,7 +55,7 @@ const SameCar = () => {
                     </div>
                 </div>
                 <p className="vehicle-p">
-                    Beside you're savings, ((DomainName)) is always here to help with any of your automotive needs
+                    Beside you're savings, {process.env.NEXT_PUBLIC_SITE_NAME} is always here to help with any of your automotive needs
                     All values are approximated and/or average.
                 </p>
             </div>

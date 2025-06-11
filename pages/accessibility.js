@@ -6,10 +6,10 @@ export default function AccessibilityPage() {
     return (
         <>
             <Seo
-                title="Accessibility"
-                description="Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from eAutoLease. No hidden fees."
-                canonical="https://www.eautolease.com/services/trade-ins/"
-                ogUrl="https://www.eautolease.com/services/trade-ins/"
+                title={`Accessibility | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
             />
 
             <Breadcrumbs />
@@ -19,7 +19,7 @@ export default function AccessibilityPage() {
                     <h1>Accessibility Statement</h1>
 
                         <h2>General</h2>
-                        <p>eautolease.com strives to ensure that its services are accessible to people with disabilities. eautolease.com has invested a significant amount of resources to help ensure that its website is made easier to use and more accessible for people with disabilities, with the strong belief that every person has the right to live with dignity, equality, comfort and independence.</p>
+                        <p>{process.env.NEXT_PUBLIC_SITE_NAME} strives to ensure that its services are accessible to people with disabilities. {process.env.NEXT_PUBLIC_SITE_NAME} has invested a significant amount of resources to help ensure that its website is made easier to use and more accessible for people with disabilities, with the strong belief that every person has the right to live with dignity, equality, comfort and independence.</p>
                         <p>If you have trouble seeing our website, we recommend reviewing the resources listed below to help optimize your computer and browser to improve your online experience:</p>
                         <ul>
                             <li>Use the keyboard to navigate screens</li>

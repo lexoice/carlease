@@ -17,10 +17,10 @@ export default function HomePage() {
     return (
         <>
             <Seo
-                title="718 Auto Lease Offering Great Leasing Specials in Brooklyn"
-                description="718 Auto Lease has the best car leasing deals in Brooklyn. Our team can help you lease a car at a great rate without any trouble."
-                canonical="https://www.718autolease.com/"
-                ogUrl="https://www.718autolease.com/"
+                title={`${process.env.NEXT_PUBLIC_SITE_NAME} Offering Great Leasing Specials in Philadelphia`}
+                description={`${process.env.NEXT_PUBLIC_SITE_NAME} has the best car leasing deals in Philadelphia. Our team can help you lease a car at a great rate without any trouble.`}
+                canonical={process.env.NEXT_PUBLIC_SITE_URL}
+                ogUrl={process.env.NEXT_PUBLIC_SITE_URL}
             />
 
             <Hero />

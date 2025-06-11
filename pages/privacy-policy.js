@@ -6,10 +6,10 @@ export default function AccessibilityPage() {
     return (
         <>
             <Seo
-                title="Privacy Policy"
-                description="Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from eAutoLease. No hidden fees."
-                canonical="https://www.eautolease.com/services/trade-ins/"
-                ogUrl="https://www.eautolease.com/services/trade-ins/"
+                title={`Privacy Policy | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy/`}
             />
 
             <Breadcrumbs />
@@ -20,16 +20,16 @@ export default function AccessibilityPage() {
                     <p>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>
 
                     <h3>Special Note:</h3>
-                    <p>Monthly pricing may reflect based on registered vehicle address. All prices displayed on eAutoLease.com are starting at. Each listed vehicle is a base model.</p>
+                    <p>Monthly pricing may reflect based on registered vehicle address. All prices displayed on {process.env.NEXT_PUBLIC_SITE_NAME} are starting at. Each listed vehicle is a base model.</p>
 
                     <h3>Price Matching Policy:</h3>
                     <ul>
                         <li>We constantly compare prices on all cars, so you'll know you're saving.</li>
-                        <li>Value at eAutoLease.com is about feeling a sense of satisfaction that you paid the right price without sacrificing experience, quality or style.</li>
+                        <li>Value at {process.env.NEXT_PUBLIC_SITE_NAME} is about feeling a sense of satisfaction that you paid the right price without sacrificing experience, quality or style.</li>
                         <li>We remain focused on simplifying the shopping experience to provide great deals when and where our customers want to shop.</li>
                     </ul>
 
-                    <p>eAutoLease.com is committed to providing low prices every day, on everything.* So if you find a lower price from our competitor on a motor vehicle with identical M.S.R.P., tell us and we'll match it.</p>
+                    <p>{process.env.NEXT_PUBLIC_SITE_NAME} is committed to providing low prices every day, on everything.* So if you find a lower price from our competitor on a motor vehicle with identical M.S.R.P., tell us and we'll match it.</p>
 
                     <h3>*The following limitations apply:</h3>
                     <p>
@@ -43,8 +43,8 @@ export default function AccessibilityPage() {
                         Prices from or on behalf of third-party brokers;<br />
                         Pricing due to errors, competitor door busters/lightning sales;<br />
                         "Coupon" offers and/or "Promotional" codes.<br />
-                        eAutoLease.com has the final decision for matching a price.<br />
-                        eAutoLease reserves the right to update or modify the terms of this policy at any time.
+                        {process.env.NEXT_PUBLIC_SITE_NAME} has the final decision for matching a price.<br />
+                        {process.env.NEXT_PUBLIC_SITE_NAME} reserves the right to update or modify the terms of this policy at any time.
                     </p>
 
                     <h3>What personal information do we collect from the people that visit our blog, website or app?</h3>

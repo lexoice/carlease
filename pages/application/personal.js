@@ -10,10 +10,10 @@ export default function BusinessApplicationPage() {
   return (
     <>
       <Seo
-        title="Business Credit Application | eAutoLease"
-        description="Fill out our secure business credit application and get a quote from eAutoLease.com."
-        canonical="https://www.eautolease.com/application/business"
-        ogUrl="https://www.eautolease.com/application/business"
+        title={`Business Credit Application | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+        description={`Fill out our secure business credit application and get a quote from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
+        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application/business`}
+        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application/business`}
       />
 
       <Breadcrumbs />

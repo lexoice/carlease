@@ -6,10 +6,10 @@ export default function AccessibilityPage() {
     return (
         <>
             <Seo
-                title="Code of Ethics"
-                description="Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from eAutoLease. No hidden fees."
-                canonical="https://www.eautolease.com/services/trade-ins/"
-                ogUrl="https://www.eautolease.com/services/trade-ins/"
+                title={`Code of Ethics | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`NADA's Code of Ethics is designed to reinforce dealers' including a personal commitment to quality service and high ethical standards.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/code-of-ethics/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/code-of-ethics/`}
             />
 
             <Breadcrumbs />
@@ -23,7 +23,7 @@ export default function AccessibilityPage() {
                     </p>
 
                     <p>
-                        As a member of NADA, member dealers including eAutoLease, subscribe to the following principles and standards. Implicit in this Code is the requirement that NADA members comply fully with all federal, state, and local laws governing their businesses.
+                        As a member of NADA, member dealers including {process.env.NEXT_PUBLIC_SITE_NAME}, subscribe to the following principles and standards. Implicit in this Code is the requirement that NADA members comply fully with all federal, state, and local laws governing their businesses.
                     </p>
 
                     <p>&nbsp;</p>
@@ -31,7 +31,7 @@ export default function AccessibilityPage() {
                     <h3>We pledge to:</h3>
                     
                     <ul>
-                        <li>Operate eAutoLease, a <a href="https://www.eautolease.com/">car leasing company</a> in accord with the highest standards of ethical conduct.</li>
+                        <li>Operate {process.env.NEXT_PUBLIC_SITE_NAME}, a <a href="https://www.eautolease.com/">car leasing company</a> in accord with the highest standards of ethical conduct.</li>
                         <li>Treat each customer in a fair, open, and honest manner, and fully comply with all laws that prohibit discrimination.</li>
                         <li>Meet the transportation needs of our customers in a knowledgeable and professional manner.</li>
                         <li>Represent our products clearly and factually, standing fully behind our warranties, direct and implied, and in all other ways justifying the customer's respect and confidence.</li>

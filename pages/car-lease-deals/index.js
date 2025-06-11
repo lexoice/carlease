@@ -1,5 +1,3 @@
-// pages/car-lease-deals/index.js
-
 import React from 'react'
 import Seo from '../../components/UI/Seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
@@ -10,7 +8,7 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
   return (
     <>
       <Seo
-        title="New York’s Auto Leasing | Brooklyn Lease Deals | eAutoLease"
+        title={`New York’s Auto Leasing | Brooklyn Lease Deals | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
         description="Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from New York's top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx."
         canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
         ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
@@ -35,7 +33,6 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
         </div>
       </div>
 
-      {/* Теперь Sidebar и результаты — внутри CarSection */}
       <CarSection
         ssrDeals={initialDeals}
         ssrTotal={total}

@@ -6,10 +6,10 @@ export default function AccessibilityPage() {
     return (
         <>
             <Seo
-                title="Terms of Service"
-                description="Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from eAutoLease. No hidden fees."
-                canonical="https://www.eautolease.com/services/trade-ins/"
-                ogUrl="https://www.eautolease.com/services/trade-ins/"
+                title={`Terms of Service | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service/`}
             />
 
             <Breadcrumbs />
