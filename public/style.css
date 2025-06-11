@@ -2428,15 +2428,9 @@ input:focus {
 }
 
 .car-in-day-wrp {
-    max-width: 1565px;
+    max-width: 960px;
     width: 100%;
-    margin-left: auto;
-    padding-left: 15px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 680px 45px 1fr;
-    grid-template-columns: 680px 1fr;
-    gap: 45px;
+    margin: 0 auto;
 }
 
 

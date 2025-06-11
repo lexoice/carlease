@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithLoader from "../UI/ImageWithLoader"
 
 const HowDoes = () => {
     return (
@@ -12,35 +13,35 @@ const HowDoes = () => {
                     <div className="how-dose-right">
                         <div className="single-dose">
                             <div className="img">
-                                <img src="/images/car/dcar1.png" alt="car" width="129px" height="59px" loading="lazy" />
+                                <ImageWithLoader src="/images/car/dcar1.png" alt="car" width="129px" height="59px" loading="lazy" />
                             </div>
                             <p>Choose <br /> Your Car</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <img src="/images/car/dcar2.png" alt="car" width="129px" height="59px" loading="lazy" />
+                                <ImageWithLoader src="/images/car/dcar2.png" alt="car" width="129px" height="59px" loading="lazy" />
                             </div>
                             <p>Get Your <br /> Quote</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <img src="/images/car/dcar4.png" alt="car" width="129px" height="59px" loading="lazy" />
+                                <ImageWithLoader src="/images/car/dcar4.png" alt="car" width="129px" height="59px" loading="lazy" />
                             </div>
                             <p>Confirm <br /> Quote</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <img src="/images/car/dcar4.png" alt="car" width="129px" height="59px" loading="lazy" />
+                                <ImageWithLoader src="/images/car/dcar4.png" alt="car" width="129px" height="59px" loading="lazy" />
                             </div>
                             <p>Locate <br /> Your Car</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <img src="/images/car/dcar5.png" alt="car" width="129px" height="59px" loading="lazy" />
+                                <ImageWithLoader src="/images/car/dcar5.png" alt="car" width="129px" height="59px" loading="lazy" />
                             </div>
                             <p>Free <br /> Delivery</p>
                         </div>

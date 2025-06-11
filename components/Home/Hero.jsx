@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithLoader from "../UI/ImageWithLoader"
 
 const Hero = () => {
     return (
@@ -27,7 +28,7 @@ const Hero = () => {
                         </ul>
                     </div>
                     <div className="banner-car">
-                        <img src="/images/p1.png" alt="Car" width="100px" height="500px" loading="lazy" />
+                        <ImageWithLoader src="/images/p1.png" alt="Car" width="1000px" height="500px" loading="lazy" />
                     </div>
                 </div>
             </div>

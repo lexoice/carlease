@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import { ModalContext } from '../../contexts/ModalContext'
 import Modal from '../UI/Modal'
+import ImageWithLoader from "../UI/ImageWithLoader"
 
 const Footer = () => {
   const { modalData, closeModal } = useContext(ModalContext)
@@ -66,7 +67,7 @@ const Footer = () => {
         <div className="foote-btm">
           <div className="container">
             <div className="overflow-auto">
-              <img
+              <ImageWithLoader
                 src="/images/fDealerLogo.png"
                 alt="dealer logos"
                 width="1370px"
