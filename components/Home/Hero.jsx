@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -21,10 +22,10 @@ const Hero = () => {
                     </div>
                     <div className="overflow-auto">
                         <ul>
-                            <li><a href="/car-lease-deals/electric-lease-specials/">Electric Cars</a></li>
-                            <li><a href="/car-lease-deals/hybrid-lease-specials/">Hybrids Cars</a></li>
-                            <li><a href="/business-leasing">Business/Commercial</a></li>
-                            <li><a href="/services/lease-returns/">Lease Return</a><a> / </a><a href="/services/trade-in-appraisals/">Trade in Your Vehicles</a></li>
+                            <li><Link href="/car-lease-deals/electric-lease-specials/">Electric Cars</Link></li>
+                            <li><Link href="/car-lease-deals/hybrid-lease-specials/">Hybrids Cars</Link></li>
+                            <li><Link href="/business-leasing">Business/Commercial</Link></li>
+                            <li><Link href="/services/lease-returns/">Lease Return</Link><a> / </a><Link href="/services/trade-in-appraisals/">Trade in Your Vehicles</Link></li>
                         </ul>
                     </div>
                     <div className="banner-car">

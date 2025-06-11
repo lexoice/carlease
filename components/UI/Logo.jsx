@@ -1,12 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Logo = () => {
     return (
         <div className="logo">
-            <a href="/">
+            <Link href="/">
                 <span>Car</span>
                 <span>Lease</span>
-            </a>
+            </Link>
         </div>
     );
 };
