@@ -2,7 +2,7 @@
 import React, { useContext } from "react"
 import Link from "next/link"
 import { ModalContext } from "../../contexts/ModalContext"
-import ImageWithLoader from "../UI/ImageWithLoader"
+import Image from 'next/image'
 
 const CarItem = ({ car }) => {
   const { openModal } = useContext(ModalContext)
@@ -42,10 +42,10 @@ const CarItem = ({ car }) => {
               {badge_text}
             </span>
           )}
-          <ImageWithLoader
+          <Image
             loading="lazy"
-            width="247"
-            height="185"
+            width={247}
+            height={185}
             src={image || "/images/defaultCar.jpg"}
             alt={title}
           />
