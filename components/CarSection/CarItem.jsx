@@ -44,8 +44,8 @@ const CarItem = ({ car }) => {
           )}
           <Image
             loading="lazy"
-            width={247}
-            height={185}
+            width={377}
+            height={295}
             src={image || "/images/defaultCar.jpg"}
             alt={title}
           />
