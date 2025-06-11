@@ -1,11 +1,11 @@
 import React from 'react';
-import ImageWithLoader from "../UI/ImageWithLoader"
+import Image from 'next/image'
 
 const LogoSection = () => {
     return (
         <section className="brand-logo-sec">
             <div className="overflow-auto">
-                <ImageWithLoader src="images/brandBg.png" alt="brand" width="1608px" height="62px" loading="lazy" />
+                <Image src="/images/brandBg.png" alt="brand" width={1608} height={62} loading="lazy" />
             </div>
         </section>
     );
