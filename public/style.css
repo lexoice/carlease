@@ -8172,8 +8172,6 @@ input:focus {
     .dealer-logo {
         min-width: 80px;
         height: 100px;
-        background-position: top -117px left 1px;
-        background-size: 406px;
     }
 
     .dealer-right {
@@ -8240,6 +8238,7 @@ input:focus {
 
     .car-in-right img {
         width: 185px;
+        object-fit: contain;
     }
 
     /* Same Car Section  */
@@ -9016,7 +9015,21 @@ input:focus {
   }
 
 @media (max-width: 768px) {
-    details-car-show img {
+    .details-car-show img {
         object-fit: cover;
     }
+    .detail-car-nav .slick-slide img {
+        object-fit: contain;
+    }
+    .banner-car {
+        height: fit-content;
+    }
+    .banner-car img {
+        height: fit-content;
+        object-fit: contain;
+    }
+}
+
+.fixed-quote-btn {
+    z-index: 999999 !important;
 }

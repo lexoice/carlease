@@ -3,8 +3,8 @@ import React from 'react';
 const Logo = () => {
     return (
         <div className="logo">
-            <a href="/">718
-                <span>Auto</span>
+            <a href="/">
+                <span>Car</span>
                 <span>Lease</span>
             </a>
         </div>

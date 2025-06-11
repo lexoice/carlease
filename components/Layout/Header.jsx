@@ -15,7 +15,7 @@ const Header = ({ makes = [] }) => {
   const [activeSearch, setActiveSearch] = useState(null)
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false)
 
-  // Закрываем все выпадашки при смене маршрута
+
   useEffect(() => {
     setActiveSearch(null)
     setIsMobileMenuActive(false)
@@ -43,7 +43,6 @@ const Header = ({ makes = [] }) => {
               </span>
               <div className="header-search-wrp">
 
-                {/* Manufacturer Search */}
                 <div className="single-search">
                   <span
                     className={`manu-click ${
@@ -72,7 +71,7 @@ const Header = ({ makes = [] }) => {
                   </div>
                 </div>
 
-                {/* Model Search */}
+
                 <div className="single-search">
                   <span
                     className={`manu-click ${
@@ -156,7 +155,6 @@ const Header = ({ makes = [] }) => {
                   </div>
                 </div>
 
-                {/* Search Button */}
                 <Link href="/car-lease-deals/" className="search-lease">
                   Search Lease Deals
                 </Link>
