@@ -8,8 +8,7 @@ import SimilarCar from "../../components/SimularCar";
 import SingleCarForm from "../../components/SingleCarForm";
 import { ModalContext } from "../../contexts/ModalContext";
 import DealerSection from "../Home/DealerSection";
-import ImageWithLoader from "../UI/ImageWithLoader"
-
+import Image from 'next/image'
 
 const SingleCarLease = ({ ssrCar }) => {
   const car = ssrCar;
@@ -86,10 +85,13 @@ const SingleCarLease = ({ ssrCar }) => {
                   asNavFor={sliderMainRef.current}
                 >
                   {images.map((img, idx) => (
-                    <ImageWithLoader 
+                    <Image 
                       key={idx}
                       src={img.src} 
                       alt={img.alt}
+                      width={240}
+                      height={160}
+                      priority
                       onClick={() => sliderMainRef.current?.slickGoTo(idx)}
                     />
                   ))}
@@ -113,7 +115,7 @@ const SingleCarLease = ({ ssrCar }) => {
                   >
                     {images.map((img, idx) => (
                       <div key={idx} className="details-car-show">
-                        <ImageWithLoader src={img.src} alt={img.alt} />
+                        <Image src={img.src} alt={img.alt} width={868} height={560} priority />
                       </div>
                     ))}
                   </Slider>
