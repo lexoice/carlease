@@ -2236,7 +2236,7 @@ input:focus {
     min-height: 295px;
     max-height: 245px;
     -o-object-fit: contain;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -8823,7 +8823,7 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 999999;
 }
 
 .video-modal .modal-content {
@@ -9014,3 +9014,9 @@ input:focus {
   .pa_business_wrapper .pa_business_block .pa_content ul li:last-child {
     margin-bottom: 0
   }
+
+@media (max-width: 768px) {
+    details-car-show img {
+        object-fit: cover;
+    }
+}
