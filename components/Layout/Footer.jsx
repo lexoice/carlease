@@ -69,8 +69,8 @@ const Footer = () => {
               <img
                 src="/images/fDealerLogo.png"
                 alt="dealer logos"
-                width="auto"
-                height="auto"
+                width="1370px"
+                height="192px"
               />
             </div>
             <div className="copy-right">

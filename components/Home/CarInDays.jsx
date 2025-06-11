@@ -6,7 +6,7 @@ const CarInDays = () => {
             <div className="car-in-day-wrp">
                 <div className="car-in-left">
 
-                    <h2 className="heading">Lease Your Dream Car <span>In Just One Day!</span></h2>
+                    <h3 className="heading">Lease Your Dream Car <span>In Just One Day!</span></h3>
                     <p>New York Metropolitan Area customers can now lease a car quickly and affordably. eAutoLease, a Brooklyn-based leasing dealer, offers same-day delivery to New York City (Brooklyn, Queens, Manhattan, The Bronx, Staten Island, Upstate New York, and surrounding areas). To lease a car through eAutoLease, simply apply online and a representative will contact you to discuss your needs. Once you've been approved, you can choose from a wide selection of new and used cars and have it delivered to your home or office the same day.</p>
                     <div class="seven_inner">
 										<div class="more_text">
@@ -28,7 +28,7 @@ const CarInDays = () => {
                 
                 </div>
                 <div className="car-in-right">
-                    <img src="/images/carInDay.png" alt="car" width="auto" height="auto" />
+                    <img src="/images/carInDay.png" alt="car" width="342px" height="212px" loading="lazy" />
                 </div>
             </div>
         </section>

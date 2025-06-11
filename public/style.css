@@ -97,13 +97,12 @@
 }
 
 
-
 @font-face {
     font-family: 'Lato';
     src: url('fonts/Lato-Light.woff2') format('woff2'), url('fonts/Lato-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -111,7 +110,7 @@
     src: url('fonts/Lato-Regular.woff2') format('woff2'), url('fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -119,7 +118,7 @@
     src: url('fonts/BigShouldersDisplay-Thin.woff2') format('woff2'), url('fonts/BigShouldersDisplay-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -127,7 +126,7 @@
     src: url('fonts/BigShouldersDisplay-ExtraBold.woff2') format('woff2'), url('fonts/BigShouldersDisplay-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -135,7 +134,7 @@
     src: url('fonts/BigShouldersDisplay-Regular.woff2') format('woff2'), url('fonts/BigShouldersDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -143,7 +142,7 @@
     src: url('fonts/BigShouldersDisplay-SemiBold.woff2') format('woff2'), url('fonts/BigShouldersDisplay-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 
@@ -1699,6 +1698,7 @@ input:focus {
     width: 75%;
     margin: 0 auto;
     text-align: center;
+    object-fit: cover;
 }
 
 
@@ -2452,11 +2452,11 @@ input:focus {
     display: block;
 }
 
-.car-in-left h2 {
+.car-in-left h3 {
     margin-bottom: 20px;
 }
 
-.car-in-left h2 span {
+.car-in-left h3 span {
     display: inline-block;
 }
 

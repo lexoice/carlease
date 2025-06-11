@@ -22,12 +22,12 @@ const Hero = () => {
                         <ul>
                             <li><a href="/car-lease-deals/electric-lease-specials/">Electric Cars</a></li>
                             <li><a href="/car-lease-deals/hybrid-lease-specials/">Hybrids Cars</a></li>
-                            <li><a href="/business-leasing">Business / Commercial</a></li>
+                            <li><a href="/business-leasing">Business/Commercial</a></li>
                             <li><a href="/services/lease-returns/">Lease Return</a><a> / </a><a href="/services/trade-in-appraisals/">Trade in Your Vehicles</a></li>
                         </ul>
                     </div>
                     <div className="banner-car">
-                        <img src="/images/p1.png" alt="Car" width="auto" height="auto" />
+                        <img src="/images/p1.png" alt="Car" width="100px" height="500px" loading="lazy" />
                     </div>
                 </div>
             </div>

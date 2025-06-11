@@ -15,7 +15,7 @@ const About = () => {
         <section className="about-sec sec-m">
             <div className="about-wrp">
                 <div className="about-left">
-                    <button className="video-btn" onClick={openVideoModal}></button>
+                    <button className="video-btn"  aria-label="Watch Video" onClick={openVideoModal}></button>
                 </div>
                 <div className="about-right">
                     <h2 className="heading">{process.env.NEXT_PUBLIC_SITE_NAME} 
@@ -30,7 +30,7 @@ const About = () => {
                     onClick={closeVideoModal}>
                     <div className="modal-content" 
                         onClick={e => e.stopPropagation()}>
-                        <button className="close-modal" 
+                        <button className="close-modal"  aria-label="Close Video"
                             onClick={closeVideoModal}>&times;</button>
                         <iframe 
                             width="100%" 
