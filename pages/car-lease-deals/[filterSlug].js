@@ -19,8 +19,8 @@ export default function DealsByFilterPage({
   return (
     <>
       <Seo
-        title={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Deals | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-        description={`Explore the best ${base} lease deals in NYC and nearby areas.`}
+        title={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials · Monthly Lease Specials (New) · ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+        description={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials at ${process.env.NEXT_PUBLIC_SITE_NAME}: ☎ (718)-407-6315 Exclusive access to marked down lease vehicles & monthly offers, rare to find limited discounts in addition to car lease specials. Short, long term auto leases. Best car leasing deals. Unbeatable prices. Our monthly lease deals & specials often not published`}
         canonical={canonicalUrl}
         ogUrl={canonicalUrl}
       />

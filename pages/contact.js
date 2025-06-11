@@ -25,7 +25,7 @@ export default function ContactPage() {
                             most extensive vehicle leasing inventory available throughout New York,
                             New Jersey, Pennsylvania, and Connecticut. You won't find any high-priced
                             real estate that holds this extensive inventory, which is why you'll
-                            save money when you lease from ((DomainName)).
+                            save money when you lease from {process.env.NEXT_PUBLIC_SITE_NAME}.
                         </p>
                     </div>
                     <div className="inner-banner-right-area">
@@ -68,7 +68,7 @@ export default function ContactPage() {
                             <p>
                                 Your time is valuable. With easy, clear communication, you'll get the
                                 answers you need to make a quick decision. So don't hesitate to contact
-                                the sales and service professionals at ((DomainName)) for honest, timely
+                                the sales and service professionals at {process.env.NEXT_PUBLIC_SITE_NAME} for honest, timely
                                 answers. You'll find quick responses during our normal Sales and Service
                                 operating times, seven days a week.
                             </p>

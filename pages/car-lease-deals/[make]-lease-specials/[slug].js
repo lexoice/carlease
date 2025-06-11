@@ -10,12 +10,8 @@ export default function CarDetailPage({ ssrCar, make }) {
   return (
     <>
       <Seo
-        title={ssrCar ? ssrCar.title : 'Vehicle Details'}
-        description={
-          ssrCar
-            ? `Lease ${ssrCar.title} in NYC — best deals for ${ssrCar.make}`
-            : 'Detailed view and lease quote form for your selected vehicle.'
-        }
+        title={`Best car lease for ${ssrCar?.title} · ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+        description={`Best ${ssrCar?.title} lease specials offered by ${process.env.NEXT_PUBLIC_SITE_NAME}. ☎ (718)-407-6315 Exclusive access to marked down lease vehicles & monthly offers, rare to find limited discounts in addition to car lease specials. Short, long term auto leases. Best car leasing deals. Unbeatable prices. Our monthly lease deals & specials often not published`}
         canonical={canonicalUrl}
         ogUrl={canonicalUrl}
       />

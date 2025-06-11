@@ -8,8 +8,8 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
   return (
     <>
       <Seo
-        title={`New York’s Auto Leasing | Brooklyn Lease Deals | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-        description="Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from New York's top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx."
+        title={`Auto Leasing in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+        description="Auto leasing in Philadelphia will have you driving a vehicle you love at a price you can afford. We offer the best car lease deals around."
         canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
         ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
       />
@@ -18,16 +18,16 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
 
       <div className="inner-banner-con">
         <div className="inner-banner-left">
-          <h1>Best Car Lease Deals in NYC</h1>
+          <h1>Best Car Lease Deals in Philadelphia</h1>
           <p>
-            Best Car Lease Deals in Brooklyn, New York | $0 Down Leasing Specials
+            Best Car Lease Deals in Philadelphia | $0 Down Leasing Specials
           </p>
         </div>
         <div className="inner-banner-right-area">
           <div className="inner-banner-right">
             <p>
-              Special offers, rebates in NYC <br />
-              (Brooklyn, Queens, Bronx, Staten Island, Long Island)
+              Special offers, rebates in Philadelphia <br />
+              (Philadelphia, New Jersey, Delaware, Maryland, Virginia)
             </p>
           </div>
         </div>
