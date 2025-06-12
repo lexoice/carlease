@@ -25,7 +25,7 @@ const Hero = () => {
                             <li><Link href="/car-lease-deals/electric-lease-specials/">Electric Cars</Link></li>
                             <li><Link href="/car-lease-deals/hybrid-lease-specials/">Hybrids Cars</Link></li>
                             <li><Link href="/business-leasing">Business/Commercial</Link></li>
-                            <li><Link href="/services/lease-returns/">Lease Return</Link><a> / </a><Link href="/services/trade-in-appraisals/">Trade in Your Vehicles</Link></li>
+                            <li><Link href="/services/lease-return/">Lease Return</Link><a> / </a><Link href="/services/trade-ins/">Trade in Your Vehicles</Link></li>
                         </ul>
                     </div>
                     <div className="banner-car">

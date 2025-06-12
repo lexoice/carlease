@@ -52,6 +52,7 @@ export default function Modal({ isOpen, onClose, data }) {
         model: data?.slug,
         timestamp: openTs,
         body_type: "",
+        site: typeof window !== "undefined" ? window.location.href : "",
         recaptchaToken,
       });
       setFeedback({

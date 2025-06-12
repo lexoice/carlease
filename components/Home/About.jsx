@@ -19,7 +19,7 @@ const About = () => {
                 </div>
                 <div className="about-right">
                     <h2 className="heading">{process.env.NEXT_PUBLIC_SITE_NAME} 
-                        <span>Car Leasing Company in Brooklyn</span>
+                        <span>Car Leasing Company in PA</span>
                     </h2>
                     <p>{process.env.NEXT_PUBLIC_SITE_NAME} is here to help you find the best leasing deals in Brooklyn. Our team has been helping clients find great lease deals on all makes and models for years, and we are here to help you too. We aren’t just another Brooklyn dealership through. We operate in an entirely different way, and we think you will like the way things work. Take some time to read through this page and the rest of our website to learn more about how our leasing service works, and how we can get you the best deals around. </p>
                 </div>

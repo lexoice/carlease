@@ -198,7 +198,7 @@ const SingleCarLease = ({ ssrCar }) => {
                 Cheapest short or long term car lease deals. Bad credit? Not a
                 problem.
               </p>
-              <a href="tel:+17189712277">(718) 897-12277</a>
+              <a href="tel:+17188712277">(718) 871-2277</a>
               <p>*Same-day delivery available.</p>
             </div>
           </div>

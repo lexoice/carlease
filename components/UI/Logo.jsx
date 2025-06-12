@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Logo = () => {
     return (
         <div className="logo">
-            <Link href="/">
+            <Link href="/">Philadelphia 
                 <span>Car</span>
                 <span>Lease</span>
             </Link>

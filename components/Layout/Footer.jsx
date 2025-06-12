@@ -16,13 +16,7 @@ const Footer = () => {
             <div>
               <h2>Contact Us</h2>
               <p>Contact us today for a free quote on any auto make or model!</p>
-              <h3>Main Office</h3>
               <ul>
-                <li>
-                  <span className="loca">
-                  {process.env.NEXT_PUBLIC_SITE_NAME} 3820 Nostrand Ave, #107 Brooklyn NY 11235
-                  </span>
-                </li>
                 <li>
                   <a className="call" href="tel:+17188712277">
                     +718 871 2277
@@ -30,13 +24,13 @@ const Footer = () => {
                 </li>
               </ul>
               <h3>Other Leasing Locations:</h3>
-              <p>Stamford, CT; Philadelphia, PA; Newark, NJ</p>
+              <p>Stamford, CT; NY, PA; Newark, NJ</p>
             </div>
           </div>
 
           <div className="footer-top-right">
             <p>
-              **{process.env.NEXT_PUBLIC_SITE_NAME} is not a franchised dealer. {process.env.NEXT_PUBLIC_SITE_NAME} is a transporter,
+              **Operated by eAutoLease. We are not a franchised dealer. We are is a transporter,
               and auto brokerage firm licensed and bonded in the state of New York.
               Facility ID No. 7120366. {process.env.NEXT_PUBLIC_SITE_NAME} is a proud member of the New York Auto
               Brokers Association (NYABA) and a certified car leasing company by the
@@ -51,10 +45,10 @@ const Footer = () => {
             </p>
             <p className="dealer-rate">
               {process.env.NEXT_PUBLIC_SITE_NAME} has a{' '}
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.dealerrater.com/dealer/eAutoLease-dealer-reviews-106562/#link" target="_blank" rel="noopener noreferrer">
                 DealerRater
               </a>{' '}
-              rating of 5.0/5 based on 3000+ ratings and reviews.
+              rating of 5.0/5 based on 4000+ ratings and reviews.
             </p>
             <p>
               *Occasionally there may be delays in updating monthly pricing, as deals can
@@ -76,7 +70,7 @@ const Footer = () => {
             </div>
             <div className="copy-right">
               <p>
-                © 2025 {process.env.NEXT_PUBLIC_SITE_NAME}. All Rights Reserved. {process.env.NEXT_PUBLIC_SITE_NAME} is a registered trademark
+                © {new Date().getFullYear()} {process.env.NEXT_PUBLIC_SITE_NAME}. All Rights Reserved. {process.env.NEXT_PUBLIC_SITE_NAME} is a registered trademark
                 (Reg. No. 6,533,092).
               </p>
               <ul>

@@ -11,10 +11,10 @@ const CarInDays = () => {
           </h3>
           <p>
             New York Metropolitan Area customers can now lease a car quickly and
-            affordably. eAutoLease, a Brooklyn-based leasing dealer, offers
+            affordably.Brooklyn-based leasing dealer, offers
             same-day delivery to New York City (Brooklyn, Queens, Manhattan, The
             Bronx, Staten Island, Upstate New York, and surrounding areas). To
-            lease a car through eAutoLease, simply apply online and a
+            lease a car through, simply apply online and a
             representative will contact you to discuss your needs. Once you've
             been approved, you can choose from a wide selection of new and used
             cars and have it delivered to your home or office the same day.
@@ -72,8 +72,7 @@ const CarInDays = () => {
                 possible price.
               </p>
               <p>
-                We are essentially an{" "}
-                 <a href="https://www.eautolease.com/" title="eAutoLease">auto leasing </a>{" "}
+                We are essentially an{" "}auto leasing{" "}
                 broker that helps you to get exactly what you need, when you
                 need it. You will love the lower prices that you will get, and
                 the dealerships love working with us because we bring them sales

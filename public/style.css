@@ -904,7 +904,7 @@ input:focus {
 .logo a {
     color: #FFF;
     font-family: Big Shoulders Display;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     line-height: normal;
     display: -webkit-box;
@@ -923,7 +923,7 @@ input:focus {
 .logo a span:last-child {
     color: #FFF;
     font-family: Big Shoulders Display;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
 }
 

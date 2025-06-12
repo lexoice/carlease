@@ -13,7 +13,7 @@ const DealerSection = () => {
                         <h2>the most trusted car leasing company</h2>
                         <div className="star-rating">
                             <span className="star">★ ★ ★ ★ ★</span>
-                            <p>5.0/5 out of <a href="#">4000+ Reviews</a></p>
+                            <p>5.0/5 out of <a href="https://www.dealerrater.com/dealer/eAutoLease-dealer-reviews-106562/#link" rel="noopener noreferrer" target="_blank">4000+ Reviews</a></p>
                         </div>
                     </div>
                 </div>

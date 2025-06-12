@@ -49,7 +49,7 @@ const SameCar = () => {
                                 <li><span>Broker Fee</span> <span>$399</span></li>
                                 <li><span>Other Expenses</span> <span>$499</span></li>
                                 <li><span>Hidden Fees</span> <span>$499</span></li>
-                                <li><a href="#">Find Your Car</a></li>
+                                <li><a href="/car-lease-deals/">Find Your Car</a></li>
                             </ul>
                         </div>
                     </div>
