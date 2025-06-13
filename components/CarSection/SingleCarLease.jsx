@@ -1,5 +1,3 @@
-// components/CarSection/SingleCarLease.jsx
-
 import React, { useState, useRef, useContext } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -205,7 +203,7 @@ const SingleCarLease = ({ ssrCar }) => {
         </div>
       </div>
       <DealerSection />
-      <SimilarCar />
+      <SimilarCar body_type={car.body_type} />
     </section>
   );
 };
