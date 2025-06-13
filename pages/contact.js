@@ -7,7 +7,7 @@ export default function ContactPage() {
         <>
             <Seo
                 title={`Contact Us | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-                description={`Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from New York's top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx.`}
+                description={`Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from Philadelphia top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/contact`}
                 ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/contact`}
             />
@@ -22,7 +22,7 @@ export default function ContactPage() {
                         <h1>Contact Us</h1>
                         <p>
                             You've come to the right place for the best lease deals. We offer the
-                            most extensive vehicle leasing inventory available throughout New York,
+                            most extensive vehicle leasing inventory available throughout Philadelphia, New York,
                             New Jersey, Pennsylvania, and Connecticut. You won't find any high-priced
                             real estate that holds this extensive inventory, which is why you'll
                             save money when you lease from {process.env.NEXT_PUBLIC_SITE_NAME}.
@@ -31,8 +31,8 @@ export default function ContactPage() {
                     <div className="inner-banner-right-area">
                         <div className="inner-banner-right">
                             <p>
-                                Special offers, rebates in NYC<br />
-                                (Brooklyn, Queens, Bronx, Staten Island, Long Island)
+                                Special offers, rebates in PA<br />
+                                (Philadelphia, PA)
                             </p>
                         </div>
                     </div>

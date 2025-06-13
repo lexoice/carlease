@@ -8,7 +8,7 @@ export default function TradeInsPage() {
     return (
         <>
             <Seo
-                title={`Cash for Trade-Ins or Used Cars | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                title={`Sell Your Car in Brooklyn | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
                 ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
@@ -18,39 +18,32 @@ export default function TradeInsPage() {
 
             <section className="contact-inner-sec sec-m">
                 <main className="main-inner">
-                    <h1>A Direct Trade-In Appraisal Process</h1>
+                    <h1>Sell Your Car in Brooklyn</h1>
                     <p>
-                        One of the best ways to save money on the purchase or lease of your
-                        car or truck is to leverage the value of your existing vehicle. That
-                        car or truck you have sitting in your driveway can make the difference
-                        between a down payment or no down payment. It’s important, however, to
-                        get an honest and realistic idea of what your vehicle is worth. Cars
-                        for Leasing Online offers a fair, honest and simple trade-in process to
-                        give customers maximum value on your car or truck. Call us today at{' '}
-                        <a href="tel:+16466044899">(646) 604-4899</a> to learn more about your
-                        trade-in options.
+                        You can sell your car in Brooklyn far faster and easier than you may have expected. Our team has helped many people
+                        sell all makes and models of vehicles for years, and we have found that we can often pay much more than anyone else
+                        in the area. This quite often includes private buyers. Even if you aren’t sure that you want to sell your car yet,
+                        it is a good idea to come to us to get an appraisal so you can learn how much it is worth. This way you will be
+                        armed with all the information possible about your situation and can make the best decision you can.
                     </p>
 
-                    <h2>Trading In Your Car or Truck</h2>
+                    <h2>Free Appraisals</h2>
                     <p>
-                        The process of trading in your car or truck begins with contacting our
-                        honest, friendly and qualified appraisers. We assess your vehicle based
-                        on multiple factors—including age, condition, mileage, Kelley Blue Book
-                        value and more. Once we determine its value using our proven criteria,
-                        we’ll make you an offer on the spot. After you accept, we get you
-                        behind the wheel of your new car or truck. Don’t waste time selling
-                        privately—let us make you the best offer.
+                        If you <a href="https://www.ecarscash.com/sell-my-car-for-cash/">sell your car for cash</a>, we will first appraise
+                        the vehicle to determine how much it is worth. Based on that, we can make a fair and accurate offer to purchase it
+                        from you. Our appraisals are completely free of charge and never come with any type of obligation to go through with
+                        the sale. This will simply give you more information to help you make your decision on what you want to do next. If
+                        you would like, our appraiser can come out to your home or business to do the inspection so you don’t have to be
+                        inconvenienced at all.
                     </p>
 
-                    <h2>Tips for a Successful Trade-In</h2>
+                    <h2>We will Help Sell Your Car</h2>
                     <p>
-                        To maximize your return, have your vehicle cleaned and maintained
-                        before appraisal. Gather all service records so we can accurately
-                        assess its condition and longevity. If you’re buying a new car or
-                        truck, your current vehicle can cover or reduce the down payment.
-                        Let the pros at Cars for Leasing Online make you the best offer on
-                        your current car or truck. Call us today at{' '}
-                        <a href="tel:+16466044899">(646) 604-4899</a>.
+                        Since we are constantly buying, selling, and leasing cars in Brooklyn, we are ready to help provide you with
+                        everything needed when you are ready. Our team will be more than happy to help you sell your car whether you are
+                        looking to lease something new or not. We are dedicated to the best customer service no matter what it is you need.
+                        If you would like to talk with one of our customer service representatives about selling your car in Brooklyn,
+                        please give us a call at  <a href="tel:+15706982277">570-698-2277</a>
                     </p>
                 </main>
             </section>

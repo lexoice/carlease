@@ -8,7 +8,7 @@ export default function TradeInsPage() {
     return (
         <>
             <Seo
-                title={`Cash for Trade-Ins or Used Cars | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                title={`Trade-In Appraisals in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
                 ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
@@ -18,39 +18,32 @@ export default function TradeInsPage() {
 
             <section className="contact-inner-sec sec-m">
                 <main className="main-inner">
-                    <h1>A Direct Trade-In Appraisal Process</h1>
+                    <h1>Trade-In Appraisals in Philadelphia</h1>
                     <p>
-                        One of the best ways to save money on the purchase or lease of your
-                        car or truck is to leverage the value of your existing vehicle. That
-                        car or truck you have sitting in your driveway can make the difference
-                        between a down payment or no down payment. It’s important, however, to
-                        get an honest and realistic idea of what your vehicle is worth. Cars
-                        for Leasing Online offers a fair, honest and simple trade-in process to
-                        give customers maximum value on your car or truck. Call us today at{' '}
-                        <a href="tel:+16466044899">(646) 604-4899</a> to learn more about your
-                        trade-in options.
+                        Get a trade-in appraisal when you are looking to lease a car in Philadelphia. We can look over your current vehicle and
+                        let you know how much it will be worth as a trade-in. This will help you to know how much money can be used as a
+                        down payment, which will be very helpful in deciding what vehicle you would like to lease. Our appraisal process is
+                        quick and easy so you don’t have to worry about a thing. Give us a call at <a href="tel:+15706982277">570-698-2277</a> to speak to one of our
+                        customer service professionals and we will be more than happy to schedule an appraisal for you.
                     </p>
 
-                    <h2>Trading In Your Car or Truck</h2>
+                    <h2>No-Obligation Appraisals</h2>
                     <p>
-                        The process of trading in your car or truck begins with contacting our
-                        honest, friendly and qualified appraisers. We assess your vehicle based
-                        on multiple factors—including age, condition, mileage, Kelley Blue Book
-                        value and more. Once we determine its value using our proven criteria,
-                        we’ll make you an offer on the spot. After you accept, we get you
-                        behind the wheel of your new car or truck. Don’t waste time selling
-                        privately—let us make you the best offer.
+                        When you have us perform a trade-in appraisal on your vehicle you don’t have to worry about any type of fees or
+                        obligations. We perform the appraisal free of charge and never require you to buy or lease from us in exchange. This
+                        is a complimentary service to help our customers learn more about their situation so they can make the best possible
+                        decision. We will be more than happy to offer you any other insights or advice when it comes to leasing a car in
+                        Philadelphia, or trading in your existing vehicle for something new.
                     </p>
 
-                    <h2>Tips for a Successful Trade-In</h2>
+                    <h2>Get the Help You Need</h2>
                     <p>
-                        To maximize your return, have your vehicle cleaned and maintained
-                        before appraisal. Gather all service records so we can accurately
-                        assess its condition and longevity. If you’re buying a new car or
-                        truck, your current vehicle can cover or reduce the down payment.
-                        Let the pros at Cars for Leasing Online make you the best offer on
-                        your current car or truck. Call us today at{' '}
-                        <a href="tel:+16466044899">(646) 604-4899</a>.
+                        If you would like to have your vehicle appraised, you can give us a call to talk with one of our customer service
+                        professionals. We will be able to book a time for one of our appraisers to come out to your home or business to look
+                        at the vehicle and let you know what it is worth. Our team is known for paying top dollar on all trade-ins so you
+                        may be very pleasantly surprised to learn just how much you can get. TO get this process started please dial
+                        <a href="tel:+15706982277">570-698-2277</a> today.
+
                     </p>
                 </main>
             </section>

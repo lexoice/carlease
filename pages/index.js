@@ -17,7 +17,7 @@ export default function HomePage() {
     return (
         <>
             <Seo
-                title={`${process.env.NEXT_PUBLIC_SITE_NAME} Offering Great Leasing Specials in Philadelphia`}
+                title={`Best Car Lease Deals for You | ${process.env.NEXT_PUBLIC_SITE_NAME} `}
                 description={`${process.env.NEXT_PUBLIC_SITE_NAME} has the best car leasing deals in Philadelphia. Our team can help you lease a car at a great rate without any trouble.`}
                 canonical={process.env.NEXT_PUBLIC_SITE_URL + "/"}
                 ogUrl={process.env.NEXT_PUBLIC_SITE_URL + "/"}

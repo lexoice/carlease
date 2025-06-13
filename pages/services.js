@@ -6,8 +6,8 @@ export default function ServicesPage() {
     return (
         <>
             <Seo
-                title={`Services | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-                description={`Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from New York's top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx.`}
+                title={`Services | {process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`Discover the best short-term car lease deals in NYC and surrounding areas for personal and business use. Lease with Philadelphia’s top auto-leasing company and unlock exclusive offers in Philadelphia’s .`} 
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services`}
                 ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services`}
             />
@@ -144,7 +144,7 @@ export default function ServicesPage() {
                                     We are looking to purchase used or new cars, trucks, SUVs,
                                     minivans and pretty much any vehicle you would like to sell.
                                     We will pay top dollar in cash for your car even if you choose
-                                    not to lease with us. ((DomainName)) is always looking ....
+                                    not to lease with us. {process.env.NEXT_PUBLIC_SITE_NAME} is always looking ....
                                 </p>
                             </div>
                             <div className="right">
@@ -182,7 +182,7 @@ export default function ServicesPage() {
                                 <h2>Trade In Appraisal</h2>
                                 <p>
                                     Ready to trade in your current used vehicle for a new car from
-                                    ((DomainName))? You may start by submitting your information so
+                                    {process.env.NEXT_PUBLIC_SITE_NAME}? You may start by submitting your information so
                                     that we can determine the estimated trade-in value of your
                                     vehicle...
                                 </p>
@@ -241,7 +241,7 @@ export default function ServicesPage() {
                             <div className="left">
                                 <h2>Pre Owned Vehicles</h2>
                                 <p>
-                                ((DomainName)) offers a variety of pre-owned vehicles for
+                                    {process.env.NEXT_PUBLIC_SITE_NAME} offers a variety of pre-owned vehicles for
                                     purchase. Frequently, we offer amazing deals on used within
                                     areas such as, New York, New Jersey, Long Island,
                                     Pennsylvania, Staten Island, Florida ....

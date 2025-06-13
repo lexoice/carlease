@@ -70,8 +70,8 @@ const Footer = () => {
             </div>
             <div className="copy-right">
               <p>
-                © {new Date().getFullYear()} {process.env.NEXT_PUBLIC_SITE_NAME}. All Rights Reserved. {process.env.NEXT_PUBLIC_SITE_NAME} is a registered trademark
-                (Reg. No. 6,533,092).
+                © {new Date().getFullYear()} {process.env.NEXT_PUBLIC_SITE_NAME}. <br />
+                All rights reserved. Operated by <a className="e-copy" href="https://www.eautolease.com/" rel="nofollow" >eAutoLease.com</a>
               </p>
               <ul>
                 <li><Link href="/accessibility">Accessibility</Link></li>
