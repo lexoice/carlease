@@ -36,14 +36,21 @@ const CarSection = ({
     async (pageNum) => {
       setLoading(true)
       try {
-        const data = await getDeals({ page: pageNum, per_page: 3, min, max })
-        setTotal(data.total)
-        if (pageNum === 1) {
+        // Если есть фильтр по цене, загружаем все машины сразу
+        const params = (qMin != null || qMax != null) 
+          ? { page: 1, per_page: -1, min, max }
+          : { page: pageNum, per_page: 3, min, max }
+        
+        const data = await getDeals(params)
+        // Обновляем total только если это первая страница или фильтрация по цене
+        if (pageNum === 1 || (qMin != null || qMax != null)) {
+          // Используем длину массива cars как total при фильтрации
+          setTotal((qMin != null || qMax != null) ? data.cars.length : data.total)
           setCarList(data.cars)
         } else {
           setCarList(prev => [...prev, ...data.cars])
         }
-        setHasMore((data.cars?.length || 0) === 3)
+        setHasMore((data.cars?.length || 0) === 3 && !(qMin != null || qMax != null))
         setPage(pageNum + 1)
       } catch (err) {
         console.error(err)
@@ -51,7 +58,7 @@ const CarSection = ({
         setLoading(false)
       }
     },
-    [min, max]
+    [min, max, qMin, qMax]
   )
 
   // CSR при смене диапазона цен
@@ -60,10 +67,16 @@ const CarSection = ({
       setCarList([])
       setTotal(0)
       setPage(1)
-      setHasMore(true)
+      setHasMore(false) // Отключаем бесконечную прокрутку при фильтрации
       fetchCars(1)
+    } else {
+      // Сбрасываем состояние при снятии фильтров
+      setCarList(ssrDeals)
+      setTotal(ssrTotal)
+      setPage(2)
+      setHasMore(ssrDeals.length === 3)
     }
-  }, [qMin, qMax, fetchCars])
+  }, [qMin, qMax, fetchCars, ssrDeals, ssrTotal])
 
   // Infinite scroll
   useEffect(() => {

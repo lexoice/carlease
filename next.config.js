@@ -5,6 +5,10 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'www.cdn.718autolease.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn2.718autolease.com'
       }
     ],
   },

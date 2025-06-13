@@ -1,22 +1,34 @@
 import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import Slider from 'react-slick'
 import { getDeals } from '../lib/api/getDeals'
 import CarItem from './CarSection/CarItem'
 
 const SimilarCar = ({ body_type }) => {
+  const router = useRouter()
+  const { min: qMin, max: qMax } = router.query
   const [similarCars, setSimilarCars] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
+  // Парсим min/max из query или ставим дефолт
+  const min = parseInt(qMin, 10) || 0
+  const max = parseInt(qMax, 10) || 1500
+
   useEffect(() => {
-    if (!body_type) return
+    if (!body_type && !qMin && !qMax) return
 
     setLoading(true)
-    getDeals({ per_page: 50 })
+    getDeals({ per_page: -1, min, max })
       .then(data => {
         const cars = data.cars || []
-        // Фильтруем автомобили по body_type
-        const filteredCars = cars.filter(car => car.body_type === body_type)
+        let filteredCars = cars
+
+        // Фильтруем по body_type если он указан
+        if (body_type) {
+          filteredCars = filteredCars.filter(car => car.body_type === body_type)
+        }
+
         // Перемешиваем и берем первые 8
         const shuffled = filteredCars.sort(() => 0.5 - Math.random())
         setSimilarCars(shuffled.slice(0, 8))
@@ -28,7 +40,7 @@ const SimilarCar = ({ body_type }) => {
       .finally(() => {
         setLoading(false)
       })
-  }, [body_type])
+  }, [body_type, qMin, qMax, min, max])
 
   if (loading) {
     return <p style={{ textAlign: 'center' }}>Loading similar vehicles…</p>
