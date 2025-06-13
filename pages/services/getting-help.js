@@ -3,6 +3,9 @@
 import React from 'react'
 import Seo from '../../components/UI/Seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
+import SingleCarForm from '../../components/SingleCarForm'
+import MakeList from '../../components/Home/MakeList'
+import DealerSection from '../../components/Home/DealerSection'
 
 export default function TradeInsPage() {
     return (
@@ -45,8 +48,13 @@ export default function TradeInsPage() {
                         If you would like to talk with one of our customer service representatives about selling your car in Brooklyn,
                         please give us a call at  <a href="tel:+15706982277">570-698-2277</a>
                     </p>
+                    <SingleCarForm />
+                    
                 </main>
+                
             </section>
+            <DealerSection />
+            <MakeList />
         </>
     )
 }

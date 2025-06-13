@@ -3,6 +3,9 @@
 import React from 'react'
 import Seo from '../../components/UI/Seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
+import SingleCarForm from '../../components/SingleCarForm'
+import MakeList from '../../components/Home/MakeList'
+import DealerSection from '../../components/Home/DealerSection'
 
 export default function TradeInsPage() {
     return (
@@ -44,8 +47,13 @@ export default function TradeInsPage() {
                         are looking for, please give us a call to discuss all your financing needs. We can be reached by dialing
                         718-393-5620. Thank you for considering 718 Car Lease for all your auto financing needs in Brooklyn.
                     </p>
+                    <SingleCarForm />
+                    
                 </main>
+                
             </section>
+            <DealerSection />
+            <MakeList />
         </>
     )
 }

@@ -3,6 +3,9 @@
 import React from 'react'
 import Seo from '../../components/UI/Seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
+import SingleCarForm from '../../components/SingleCarForm'
+import MakeList from '../../components/Home/MakeList'
+import DealerSection from '../../components/Home/DealerSection'
 
 export default function TradeInsPage() {
     return (
@@ -58,8 +61,13 @@ export default function TradeInsPage() {
                         to make sure that the vehicle is in good shape. In fact, <a href="tel:+15706982277">call 570-698-CARS (2277)</a> today and talk to our staff! They
                         will tell you everything you need to know about our lease termination policy. We can guarantee that you won’t have
                         to pay a large bill at the end, if you stick to what we tell you to do.</p>
+                    <SingleCarForm />
+
                 </main>
+
             </section>
+            <DealerSection />
+            <MakeList />
         </>
     )
 }

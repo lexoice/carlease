@@ -3,6 +3,9 @@
 import React from 'react'
 import Seo from '../../components/UI/Seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
+import SingleCarForm from '../../components/SingleCarForm'
+import MakeList from '../../components/Home/MakeList'
+import DealerSection from '../../components/Home/DealerSection'
 
 export default function TradeInsPage() {
     return (
@@ -57,8 +60,13 @@ export default function TradeInsPage() {
                         keep their lease car in tip-top shape. This results in possible financial and legal issues. Not so with us, though. So
                         call our auto leasing company on <a href="tel:+15706982277">570-698-CARS (2277)</a> now and find out more about the car leasing company that truly
                         cares.</p>
-                </main>
-            </section>
+                        <SingleCarForm />
+                    
+                    </main>
+                    
+                </section>
+                <DealerSection />
+                <MakeList />
         </>
     )
 }
