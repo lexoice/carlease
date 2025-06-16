@@ -7,10 +7,7 @@ import Sidebar from './Sidebar'
 import CarSectionHeader from './CarSectionHeader'
 import CarItem from './CarItem'
 
-/**
- * CarSection поддерживает ISR на главной странице и CSR при фильтрации по диапазону цен.
- * Теперь принимает список makes для Sidebar из пропсов.
- */
+
 const CarSection = ({
   ssrDeals = [],
   ssrTotal = 0,
@@ -19,32 +16,32 @@ const CarSection = ({
   const router = useRouter()
   const { min: qMin, max: qMax } = router.query
 
-  // Парсим min/max из query или ставим дефолт
+
   const min = parseInt(qMin, 10) || 0
   const max = parseInt(qMax, 10) || 1500
 
-  // Инициализируем стейт из SSR-пропсов
+
   const [carList, setCarList] = useState(ssrDeals)
   const [total,   setTotal]   = useState(ssrTotal)
-  const [page,    setPage]    = useState(2)                       // следующая страница
-  const [hasMore, setHasMore] = useState(ssrDeals.length === 3)  // предполагаем, что SSR вернул 3
+  const [page,    setPage]    = useState(2)
+  const [hasMore, setHasMore] = useState(ssrDeals.length === 3)
   const [loading, setLoading] = useState(false)
   const loaderRef = useRef()
 
-  // Функция загрузки машин
+
   const fetchCars = useCallback(
     async (pageNum) => {
       setLoading(true)
       try {
-        // Если есть фильтр по цене, загружаем все машины сразу
+
         const params = (qMin != null || qMax != null) 
           ? { page: 1, per_page: -1, min, max }
           : { page: pageNum, per_page: 3, min, max }
         
         const data = await getDeals(params)
-        // Обновляем total только если это первая страница или фильтрация по цене
+
         if (pageNum === 1 || (qMin != null || qMax != null)) {
-          // Используем длину массива cars как total при фильтрации
+
           setTotal((qMin != null || qMax != null) ? data.cars.length : data.total)
           setCarList(data.cars)
         } else {
@@ -61,16 +58,16 @@ const CarSection = ({
     [min, max, qMin, qMax]
   )
 
-  // CSR при смене диапазона цен
+
   useEffect(() => {
     if (qMin != null || qMax != null) {
       setCarList([])
       setTotal(0)
       setPage(1)
-      setHasMore(false) // Отключаем бесконечную прокрутку при фильтрации
+      setHasMore(false)
       fetchCars(1)
     } else {
-      // Сбрасываем состояние при снятии фильтров
+
       setCarList(ssrDeals)
       setTotal(ssrTotal)
       setPage(2)
@@ -78,7 +75,7 @@ const CarSection = ({
     }
   }, [qMin, qMax, fetchCars, ssrDeals, ssrTotal])
 
-  // Infinite scroll
+
   useEffect(() => {
     const obs = new IntersectionObserver(
       entries => {
@@ -97,7 +94,7 @@ const CarSection = ({
     <section className="search-filter-sec">
       <div className="container-x">
         <div className="search-filter-wrp">
-          {/* Передаём makes в Sidebar */}
+
           <Sidebar makes={makes} />
 
           <div className="search-filter-right">

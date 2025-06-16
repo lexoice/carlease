@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 const ChatWidget = () => {
   useEffect(() => {
-    // Создаем и добавляем скрипт Zopim чата
     const script = document.createElement('script');
     script.innerHTML = `
       window.$zopim || (function(d, s) {
@@ -27,7 +26,6 @@ const ChatWidget = () => {
     
     document.body.appendChild(script);
 
-    // Очистка при размонтировании компонента
     return () => {
       document.body.removeChild(script);
     };

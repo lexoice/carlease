@@ -6,14 +6,6 @@ import Sidebar from "./Sidebar"
 import CarSectionHeader from "./CarSectionHeader"
 import CarItem from "./CarItem"
 
-/**
- * Принимает предзагруженные через ISR пропы:
- *  - ssrCars: массив первых 12 машин
- *  - ssrTotal: общее число машин
- *  - ssrBase: базовый слаг (например "acura")
- *  - ssrFilterType: "make" или "body_type"
- *  - makes: список производителей для Sidebar
- */
 const CarDealsByFilter = ({
   ssrCars = [],
   ssrTotal = 0,
@@ -21,18 +13,18 @@ const CarDealsByFilter = ({
   ssrFilterType = null,
   makes = []
 }) => {
-  // сохраняем базовые данные из пропсов
+
   const [base]       = useState(ssrBase)
   const [filterType] = useState(ssrFilterType)
 
   const [carList, setCarList] = useState(ssrCars)
   const [total,   setTotal]   = useState(ssrTotal)
-  const [page,    setPage]    = useState(2)                 // номер следующей страницы
+  const [page,    setPage]    = useState(2)
   const [hasMore, setHasMore] = useState(ssrCars.length === 12)
   const [loading, setLoading] = useState(false)
   const loaderRef = useRef()
 
-  // при смене фильтра (новый ssrCars/ssrTotal/ssrBase/ssrFilterType) сбрасываем стейт
+
   useEffect(() => {
     setCarList(ssrCars)
     setTotal(ssrTotal)
@@ -40,7 +32,7 @@ const CarDealsByFilter = ({
     setHasMore(ssrCars.length === 12)
   }, [ssrCars, ssrTotal, ssrBase, ssrFilterType])
 
-  // грузим следующую порцию машин
+
   const fetchMore = useCallback(async () => {
     if (!filterType || loading || !hasMore) return
     setLoading(true)
@@ -61,7 +53,7 @@ const CarDealsByFilter = ({
     }
   }, [base, filterType, page, hasMore, loading])
 
-  // infinite scroll
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       entries => {
@@ -76,7 +68,7 @@ const CarDealsByFilter = ({
     return () => el && observer.unobserve(el)
   }, [fetchMore])
 
-  // заголовок для сообщения "No vehicles found"
+
   const title = base
     .split("-")
     .filter(Boolean)
@@ -88,7 +80,6 @@ const CarDealsByFilter = ({
       <div className="container-x">
         <div className="search-filter-wrp">
 
-          {/* Sidebar с переданными SSR-списками makes */}
           <Sidebar makes={makes} />
 
           <div className="search-filter-right">
@@ -101,17 +92,14 @@ const CarDealsByFilter = ({
                 ))}
               </div>
 
-              {/* сообщение, если после загрузки нет машин */}
               {!loading && carList.length === 0 && (
                 <p style={{ textAlign: "center", marginTop: 20 }}>
                   No vehicles found for “{title}”.
                 </p>
               )}
 
-              {/* индикатор загрузки */}
               {loading && <p style={{ textAlign: "center" }}>Loading...</p>}
 
-              {/* точка подгрузки для IntersectionObserver */}
               <div ref={loaderRef} style={{ height: 1 }} />
             </div>
           </div>

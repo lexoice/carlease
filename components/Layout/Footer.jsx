@@ -18,9 +18,7 @@ const Footer = () => {
               <p>Contact us today for a free quote on any auto make or model!</p>
               <ul>
                 <li>
-                  <a className="call" href="tel:+17188712277">
-                    +718 871 2277
-                  </a>
+                  <a className="call" href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a>
                 </li>
               </ul>
               <h3>Other Leasing Locations:</h3>

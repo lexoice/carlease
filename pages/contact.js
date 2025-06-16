@@ -8,8 +8,8 @@ export default function ContactPage() {
             <Seo
                 title={`Contact Us | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from Philadelphia top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/contact`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/contact`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/contact/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/contact/`}
             />
 
 
