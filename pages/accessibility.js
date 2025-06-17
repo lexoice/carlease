@@ -8,44 +8,52 @@ export default function AccessibilityPage() {
             <Seo
                 title={`Accessibility | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/accessibility/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/accessibility/`}
             />
 
             <Breadcrumbs />
+
+            Вот рерайт текста **Accessibility Statement** с уникальной формулировкой и сохранённой HTML-структурой:
+
 
             <section className="contact-inner-sec sec-m">
                 <main className="main-inner">
                     <h1>Accessibility Statement</h1>
 
-                        <h2>General</h2>
-                        <p>{process.env.NEXT_PUBLIC_SITE_NAME} strives to ensure that its services are accessible to people with disabilities. {process.env.NEXT_PUBLIC_SITE_NAME} has invested a significant amount of resources to help ensure that its website is made easier to use and more accessible for people with disabilities, with the strong belief that every person has the right to live with dignity, equality, comfort and independence.</p>
-                        <p>If you have trouble seeing our website, we recommend reviewing the resources listed below to help optimize your computer and browser to improve your online experience:</p>
-                        <ul>
-                            <li>Use the keyboard to navigate screens</li>
-                            <li>Magnify your screen</li>
-                            <li>Change background and text colors</li>
-                            <li>Make your mouse pointer more visible (Windows only)</li>
-                        </ul>
-                        <p>For more information – <a href="https://www.ssa.gov/accessibility/index.html" rel="nofollow">www.ssa.gov</a></p>
-                        <p>The guides above, referenced by the ada.gov website will help you customize your particular web browser and computer to achieve the best results. The GDW site is designed to be able to be read aloud, navigated by keyboard only, allow increased or decreased text size, or changing of its colors for your accessibility needs.</p>
-                        <h2>Closed Captioning</h2>
-                        <p>
-                            Closed captioning (CC) provides a visual display of text that is synchronized with the video presentation and audio tracks. The term "Closed" indicates that the captions are not visible unless they are activated by the user.
-                            <br />
-                            Learn how to turn captioning on and off for <a href="https://support.google.com/youtube/answer/100078?co=GENIE.Platform=Desktop&amp;hl=en-GB&amp;oco=1">YouTube by clicking here.</a>
-                        </p>
-                        <h2>Increase Text Size</h2>
-                        <p>To increase text size in most web browsers simply hold down the Ctrl key (Command key on a Macintosh) and press the + (plus) key to increase text size or – (minus) key to reduce text size.</p>
-                        <h2>BrowseAloud</h2>
-                        <p>BrowseAloud is browser plug-in for people who find it difficult to read online. By reading text aloud and highlighting the words as they are spoken, BrowseAloud can help people with learning disabilities, English as a second language, and mild visual impairments:</p>
-                        <ul>
-                            <li><a target="_blank" href="https://www.texthelp.com/en-gb/products/reachdeck/browsealoud-is-now-the-reachdeck-toolbar/" title="Download BrowseAloud" rel="noopener noreferrer">Download BrowseAloud</a></li>
-                        </ul>
-                        <h2>Contact Us</h2>
-                        <p>If you wish to report an accessibility issue, have any questions or need assistance, please contact us at <a href="tel:+17188712277">718-871-2277</a>.</p>
-                    </main>
+                    <h2>General</h2>
+                    <p>{process.env.NEXT_PUBLIC_SITE_NAME} is committed to making its services accessible to individuals with disabilities. We have devoted substantial resources to enhance website usability and accessibility, driven by the belief that everyone deserves to live with dignity, equality, independence, and comfort.</p>
+                    <p>If you experience difficulty viewing our site, consider the tips below to improve your browser and device for a better online experience:</p>
+                    <ul>
+                        <li>Navigate pages using keyboard shortcuts</li>
+                        <li>Use screen magnification tools</li>
+                        <li>Adjust text and background colors for better contrast</li>
+                        <li>Increase the visibility of your mouse pointer (Windows only)</li>
+                    </ul>
+                    <p>Additional help is available at <a href="https://www.ssa.gov/accessibility/index.html" rel="nofollow">www.ssa.gov</a></p>
+                    <p>These resources, as recommended by ada.gov, offer guidance for tailoring your computer or browser settings to your individual accessibility needs. Our site supports screen readers, keyboard navigation, text scaling, and color adjustments to ensure a more inclusive experience.</p>
+
+                    <h2>Closed Captioning</h2>
+                    <p>
+                        Closed captions (CC) display synchronized on-screen text for video and audio content. The term "Closed" means users can choose to turn captions on or off.
+                        <br />
+                        For instructions on enabling captions on YouTube, <a href="https://support.google.com/youtube/answer/100078?co=GENIE.Platform=Desktop&amp;hl=en-GB&amp;oco=1">click here</a>.
+                    </p>
+
+                    <h2>Increase Text Size</h2>
+                    <p>To enlarge text on most web browsers, press and hold the Ctrl key (or Command key on Mac), then press the + (plus) key to zoom in, or the – (minus) key to zoom out.</p>
+
+                    <h2>BrowseAloud</h2>
+                    <p>BrowseAloud is a browser extension that assists users who struggle with reading online content. It reads text out loud and highlights each word, helping those with visual impairments, learning differences, or those learning English:</p>
+                    <ul>
+                        <li><a target="_blank" href="https://www.texthelp.com/en-gb/products/reachdeck/browsealoud-is-now-the-reachdeck-toolbar/" title="Download BrowseAloud" rel="noopener noreferrer">Download BrowseAloud</a></li>
+                    </ul>
+
+                    <h2>Contact Us</h2>
+                    <p>If you encounter any accessibility barriers, have questions, or need assistance, please reach out to us at <a href="tel:+17188712277">718-871-2277</a>.</p>
+                </main>
             </section>
+
         </>
     )
 }

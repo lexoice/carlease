@@ -11,44 +11,31 @@ export default function TradeInsPage() {
     return (
         <>
             <Seo
-                title={`Lease Transfers in Brooklyn | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-                description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
+                title={`Lease Transfers in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
+                description={`Easily transfer your car lease in Philadelphia with help from ${process.env.NEXT_PUBLIC_SITE_NAME}. Avoid early termination fees and get expert guidance every step of the way.`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-transfer/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-transfer/`}
             />
 
             <Breadcrumbs />
 
             <section className="contact-inner-sec sec-m">
                 <main className="main-inner">
-                    <h1>Lease Transfers in Brooklyn</h1>
+                    <h1>Lease Transfers in Philadelphia</h1>
                     <p>
-                        Did you know that auto lease transfers are an option for all lease holders in Brooklyn? That’s right, if you got a
-                        lease that is no longer meeting your needs, you can transfer the remaining months or even years of your lease
-                        contract to a third party, and they will take over all the responsibilities. This type of thing is allowed for any
-                        lease so you never have to feel stuck in a vehicle that isn’t meeting your needs. There are many reasons why people
-                        choose to transfer a lease including changing family situations, financial reasons, and just because they want to
-                        drive the latest model available. Whatever it is in your case, we are here to help.
+                        Did you know you can transfer your car lease to someone else in Philadelphia? If your current lease no longer fits your lifestyle or needs, you don’t have to stay stuck. Lease transfers allow you to pass the remaining term of your lease agreement to another person, who then takes on all responsibilities of the contract. Whether your reason is a change in circumstances, financial goals, or simply wanting a newer model, lease transfers are a smart and flexible solution—and we’re here to assist you every step of the way.
                     </p>
 
-                    <h2>Better than Terminating a Lease</h2>
+                    <h2>A Smarter Alternative to Lease Termination</h2>
                     <p>
-
-                        Lease transfers are a better option than simply terminating your existing lease. This is because with the transfer,
-                        you aren’t ending your contract early. Instead, you’re just transferring it to someone else who will fulfil all the
-                        obligations. This will help you to avoid the fines and penalties associated with a lease termination, while still
-                        getting you the same end result. Once the lease transfer is completed, you will be able to shop for a new vehicle
-                        that will better meet your specific needs.
+                        Choosing a lease transfer instead of terminating your contract early helps you avoid costly fees and penalties. Rather than canceling your lease, you simply transfer it to another qualified individual. This process allows you to move on to a new vehicle without financial drawbacks, making it an ideal option for those seeking flexibility in their leasing journey here in Philadelphia.
                     </p>
 
-                    <h2>Here to Help with Lease Transfers</h2>
+                    <h2>Your Lease Transfer Specialists in Philadelphia</h2>
                     <p>
-                        The team here at 718 Car Lease is ready to help match you up with someone who would love to take over the remainder
-                        of your lease. We help people with all sorts of leasing needs every day, and would be happy to help you too. Get in
-                        touch with us to discuss your specific situation, and we can provide you with advice and guidance on how to get
-                        everything done just how you want it. To reach out to us, please dial 718-393-5620 to speak with one of our
-                        knowledgeable customer service professionals about the lease transfer options in Brooklyn.
+                        Our Philadelphia-based team is ready to help you find someone to take over your lease. We assist drivers daily with lease-related needs and can guide you through every step of the transfer process. Whether you're ready to begin or just exploring your options, we’ll provide straightforward advice and full support. To get started, call us at <a href="tel:+17183935620">718-393-5620</a> and speak with one of our lease specialists in Philadelphia.
                     </p>
+
                     <SingleCarForm />
 
                 </main>

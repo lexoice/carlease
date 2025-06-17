@@ -19,31 +19,32 @@ export default function AccessibilityPage() {
                     <h1>Code of Ethics</h1>
 
                     <p>
-                        Our Code of Ethics reinforces a personal commitment to quality service and high ethical standards.
+                        This Code of Ethics highlights our personal dedication to delivering exceptional service while upholding the highest moral and professional standards.
                     </p>
 
                     <p>
-                        As members of NADA, our dealers subscribe to the following principles and standards. Implicit in this Code is the requirement to comply fully with all federal, state, and local laws governing our business.
+                        As proud members of NADA, our dealership representatives adhere to the core values and principles outlined below. This commitment also includes full compliance with all applicable federal, state, and local regulations governing our operations.
                     </p>
 
-                    <h3>We pledge to:</h3>
+                    <h3>We commit to:</h3>
                     <ul>
-                        <li>Operate our business in accordance with the highest standards of ethical conduct.</li>
-                        <li>Treat each customer in a fair, open, and honest manner, fully complying with anti-discrimination laws.</li>
-                        <li>Meet customer needs in a knowledgeable and professional way.</li>
-                        <li>Represent our products clearly and factually, standing behind all warranties.</li>
-                        <li>Advertise in a positive, factual, and informative manner.</li>
-                        <li>Provide detailed estimates and clear explanations of any service work, upon request or as required by law.</li>
-                        <li>Resolve customer concerns promptly and courteously.</li>
-                        <li>Put our promises in writing and stand behind them.</li>
+                        <li>Conducting our business with integrity and maintaining the utmost ethical practices.</li>
+                        <li>Ensuring all customers are treated honestly, respectfully, and without bias, in line with anti-discrimination laws.</li>
+                        <li>Providing informed, professional service tailored to each customer's needs.</li>
+                        <li>Communicating product information accurately and standing behind all guarantees and warranties.</li>
+                        <li>Using advertising that is truthful, constructive, and transparent.</li>
+                        <li>Offering clear service estimates and full explanations of any work performed, as requested or required by law.</li>
+                        <li>Handling customer issues with professionalism, speed, and courtesy.</li>
+                        <li>Documenting our commitments and honoring them in full.</li>
                     </ul>
 
                     <h3>Ethics Guide</h3>
                     <p>
-                        NADA’s Ethics Guide focuses on four key areas of dealership operations: sales, service, financial services, and advertising.
+                        The NADA Ethics Guide outlines best practices in four critical areas of dealership operations: sales, customer service, finance, and marketing.
                     </p>
                 </main>
             </section>
+
 
         </>
     )

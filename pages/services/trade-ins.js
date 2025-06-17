@@ -12,7 +12,7 @@ export default function TradeInsPage() {
         <>
             <Seo
                 title={`Trade-In Appraisals in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-                description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
+                description={`Get a free, no-obligation trade-in appraisal in Philadelphia. Apply your car’s value toward your next lease. Fast, stress-free process with top trade-in offers. Call 570-698-2277 to schedule.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
                 ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
             />
@@ -23,35 +23,23 @@ export default function TradeInsPage() {
                 <main className="main-inner">
                     <h1>Trade-In Appraisals in Philadelphia</h1>
                     <p>
-                        Get a trade-in appraisal when you are looking to lease a car in Philadelphia. We can look over your current vehicle and
-                        let you know how much it will be worth as a trade-in. This will help you to know how much money can be used as a
-                        down payment, which will be very helpful in deciding what vehicle you would like to lease. Our appraisal process is
-                        quick and easy so you don’t have to worry about a thing. Give us a call at <a href="tel:+15706982277">570-698-2277</a> to speak to one of our
-                        customer service professionals and we will be more than happy to schedule an appraisal for you.
+                        Planning to lease a car in Philadelphia? Start with a professional trade-in appraisal of your current vehicle. We’ll evaluate your car and provide an accurate estimate of its value, which can be applied toward your lease as a down payment. This makes it easier to choose the perfect vehicle to lease. Our process is fast, stress-free, and designed with your convenience in mind. Call us at <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a> to schedule your appraisal with one of our Philadelphia-based specialists.
                     </p>
 
                     <h2>No-Obligation Appraisals</h2>
                     <p>
-                        When you have us perform a trade-in appraisal on your vehicle you don’t have to worry about any type of fees or
-                        obligations. We perform the appraisal free of charge and never require you to buy or lease from us in exchange. This
-                        is a complimentary service to help our customers learn more about their situation so they can make the best possible
-                        decision. We will be more than happy to offer you any other insights or advice when it comes to leasing a car in
-                        Philadelphia, or trading in your existing vehicle for something new.
+                        Our trade-in appraisals in Philadelphia come with no fees and no commitments. We offer this service completely free to help you make an informed decision—without any pressure to lease or purchase. Whether you're just exploring your options or ready to move forward, our team is here to guide you. We’re happy to provide honest advice about trade-ins and leasing right here in Philadelphia.
                     </p>
 
-                    <h2>Get the Help You Need</h2>
+                    <h2>Local Experts, Real Value</h2>
                     <p>
-                        If you would like to have your vehicle appraised, you can give us a call to talk with one of our customer service
-                        professionals. We will be able to book a time for one of our appraisers to come out to your home or business to look
-                        at the vehicle and let you know what it is worth. Our team is known for paying top dollar on all trade-ins so you
-                        may be very pleasantly surprised to learn just how much you can get. TO get this process started please dial
-                        <a href="tel:+15706982277">570-698-2277</a> today.
-
+                        Ready to find out what your vehicle is worth? Just give us a call and one of our Philadelphia team members will arrange a convenient time for your appraisal. We can even send someone to your home or workplace to assess the vehicle. Known for offering some of the best trade-in values in the area, we might surprise you with how much your car is really worth. Call <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a> today to get started.
                     </p>
+
                     <SingleCarForm />
-                    
+
                 </main>
-                
+
             </section>
             <DealerSection />
             <MakeList />

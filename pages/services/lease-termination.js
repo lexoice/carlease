@@ -12,9 +12,10 @@ export default function TradeInsPage() {
         <>
             <Seo
                 title={`Lease Termination in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-                description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
+                description={`End your car lease in Philadelphia without hidden fees or surprises. Learn how to avoid penalties and return your lease smoothly with help from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
+
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-termination/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-termination/`}
             />
 
             <Breadcrumbs />
@@ -23,44 +24,26 @@ export default function TradeInsPage() {
                 <main className="main-inner">
                     <h1>Lease Termination in Philadelphia</h1>
                     <p>
-                        When you lease a car from an auto leasing agency, you get to use it for a number of years. Of course, this does not
-                        make you the sole owner of the car. You are basically renting it out for a matter of a few years. When the agreed
-                        upon period in the lease contract ends, you must then return the auto lease to the original owner. This process is
-                        called lease termination.
+                        Leasing a car allows you to enjoy a vehicle for a set number of years without owning it outright. You're essentially renting the car under specific terms outlined in a lease agreement. When that lease period ends, the vehicle must be returned to the leasing provider—a process known as lease termination.
                     </p>
 
-
                     <p>
-                        Usually this should simply be the act of handing over the keys, provided that the vehicle has been used right.
-                        However, there are situations where this may turn into a lengthier process. When a car leasing company gives you a
-                        car on lease, they also specify certain limitations in the auto leasing contract. These include the maximum number
-                        of miles travelable in a year, the maximum damage percentage to the interior and exterior, and the condition of the
-                        engine. All of these are checked when the car is returned at the end of the lease period.
+                        Ideally, this is as simple as returning the keys, assuming the vehicle has been properly maintained. However, the lease agreement often includes conditions like mileage limits, acceptable wear and tear, and required mechanical condition. These factors are reviewed during the lease return process to ensure the vehicle meets agreed-upon standards.
                     </p>
 
-                    <h2>Consequences of Going over the Limits</h2>
+                    <h2>What Happens If You Exceed the Limits?</h2>
                     <p>
-                        When the inspection of the vehicle is done during lease termination, there is a chance that you may have gone over
-                        the limits specified in the contract. If this is the case, you would end up having to pay a large bill, with most
-                        car leasing companies. For instance, if the maximum number of miles has been surpassed, you will be billed for the
-                        extra amount. In this way, the expenses can add up and you could be laden with a large bill at the end.
+                        During the final inspection, if your vehicle exceeds any contractual limits, such as mileage or wear, you may face additional charges. For example, going over the allowed mileage typically results in per-mile penalties. These extra fees can add up quickly, resulting in an unexpected bill at the end of your lease term.
                     </p>
-                    <h2>Reducing the Risk at Philadelphia Car Leasing</h2>
+
+                    <h2>Minimizing Costs with Philadelphia Car Leasing</h2>
                     <p>
-                        One of the main causes of this oversight occurring is that the auto leasing company doesn’t clearly specify the
-                        terms to the customers. This results in ignorance on the customer’s part. It is the responsibility of the company to
-                        help the customers understand the terms of their lease clearly. Here at Philadelphia Car Leasing, that is exactly
-                        what we do. For us, money comes second to customer satisfaction. We do everything we can to ensure that you have a
-                        good time during and after your lease period. Our car leasing company clearly tells the customer exactly what they
-                        must and must not do. This is because we are dedicated to helping you avoid having to pay any extra at the end of
-                        your lease.
+                        At Philadelphia Car Leasing, we take the time to clearly explain every aspect of your lease so there are no surprises down the road. Many drivers face penalties simply because important terms were never fully explained. We make transparency a priority—our goal is to help you avoid unnecessary fees and ensure a smooth, stress-free lease return experience.
                     </p>
-                    <p>    Our professional agents will converse with you on the finer points and details of the car you are buying. We will
-                        even tell you how to maintain your lease car so that it is in the best condition when you return it. All cars have
-                        different requirements when it comes to maintenance. It is important that you adhere to proper procedures in order
-                        to make sure that the vehicle is in good shape. In fact, <a href="tel:+15706982277">call 570-698-CARS (2277)</a> today and talk to our staff! They
-                        will tell you everything you need to know about our lease termination policy. We can guarantee that you won’t have
-                        to pay a large bill at the end, if you stick to what we tell you to do.</p>
+                    <p>
+                        Our experienced leasing agents will guide you through maintenance tips and best practices for keeping your vehicle in great condition throughout your lease. Each car has specific needs, and our team will help you stay on track so your vehicle meets return standards. To learn more about our lease termination process, <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a> today. We’re happy to walk you through everything to make sure your lease ends without surprise costs.
+                    </p>
+
                     <SingleCarForm />
 
                 </main>

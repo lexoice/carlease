@@ -8,8 +8,8 @@ export default function ServicesPage() {
             <Seo
                 title={`Services | {process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Discover the best short-term car lease deals in NYC and surrounding areas for personal and business use. Lease with Philadelphia’s top auto-leasing company and unlock exclusive offers in Philadelphia’s .`} 
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/`}
             />
 
             <Breadcrumbs />

@@ -9,9 +9,9 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
     <>
       <Seo
         title={`Auto Leasing in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-        description="Auto leasing in Philadelphia will have you driving a vehicle you love at a price you can afford. We offer the best car lease deals around."
-        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
-        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
+        description="Discover the best car lease deals in Philadelphia. Drive the vehicle you want at a monthly payment you can afford. Flexible terms and $0 down options available."
+        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/`}
+        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/`}
       />
 
       <Breadcrumbs />
@@ -20,18 +20,19 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
         <div className="inner-banner-left">
           <h1>Best Car Lease Deals in Philadelphia</h1>
           <p>
-            Best Car Lease Deals in Philadelphia | $0 Down Leasing Specials
+            Exclusive $0 Down Leasing Specials Available in Philadelphia, PA
           </p>
         </div>
         <div className="inner-banner-right-area">
           <div className="inner-banner-right">
             <p>
-              Special offers, rebates in Philadelphia <br />
-              (Philadelphia, New Jersey, Delaware, Maryland, Virginia)
+              Limited-time lease offers and rebates <br />
+              across the Philadelphia metropolitan area
             </p>
           </div>
         </div>
       </div>
+
 
       <CarSection
         ssrDeals={initialDeals}
@@ -53,7 +54,7 @@ export async function getStaticProps() {
   return {
     props: {
       initialDeals: dealsRes.cars || [],
-      total:        dealsRes.total || 0,
+      total: dealsRes.total || 0,
       makes,
     },
     revalidate: 86400,

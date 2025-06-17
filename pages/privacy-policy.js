@@ -18,79 +18,68 @@ export default function AccessibilityPage() {
                 <main className="main-inner">
                     <h1>Privacy Policy</h1>
                     <p>
-                        This Privacy Policy explains how we collect, use, and protect your Personally Identifiable
-                        Information (PII) when you use our website. Please read it carefully.
+                        This Privacy Policy outlines how we gather, utilize, and safeguard your Personally Identifiable Information (PII) when interacting with our website. Please take a moment to review it carefully.
                     </p>
 
                     <h3>Special Note:</h3>
                     <p>
-                        Monthly pricing may vary based on your registered address. All displayed prices are
-                        starting rates; each item is shown in its base configuration.
+                        Monthly rates may differ depending on your location. All prices shown reflect entry-level configurations and serve as starting points.
                     </p>
 
                     <h3>Price Matching Policy:</h3>
                     <ul>
-                        <li>We compare prices across competitors to ensure you get the best deal.</li>
-                        <li>Our goal is to offer fair pricing without compromising quality or service.</li>
-                        <li>We aim to simplify the shopping experience and match prices when criteria are met.</li>
+                        <li>We regularly monitor competitor pricing to ensure you receive optimal value.</li>
+                        <li>Our aim is to maintain competitive pricing without sacrificing service or quality.</li>
+                        <li>We streamline the purchase process and will match prices when qualifying conditions are met.</li>
                     </ul>
                     <p>
-                        If you find an identical base model at a lower price, we will match it subject to our
-                        verification and eligibility requirements.
+                        If you locate the same base model for a lower price, we will honor that price after validating eligibility.
                     </p>
 
                     <h3>Limitations:</h3>
                     <p>
-                        The item must be identical in make, model, condition, and color and sold by an authorized
-                        dealer. The competitor’s price must be valid at the time of request.
+                        To qualify, the product must be exactly the same in make, model, specifications, and color, and sold by a licensed dealer. The competing offer must be active at the time of your request.
                     </p>
 
                     <h3>Exclusions:</h3>
                     <ul>
-                        <li>Offers from third-party brokers</li>
-                        <li>Pricing errors, doorbusters, or flash sales</li>
-                        <li>Discount codes, coupons, or promotions</li>
+                        <li>Listings from independent brokers</li>
+                        <li>Errors in pricing, limited-time deals, or promotional flash sales</li>
+                        <li>Coupons, promotional codes, or other discounts</li>
                     </ul>
 
                     <h3>Collection and Use of Information</h3>
                     <p>
-                        We collect information such as your name, email, and phone number when you register,
-                        place an order, subscribe to our newsletter, or fill out forms. This data helps us
-                        process requests, send updates, and improve our service.
+                        We collect personal details like your name, email address, and phone number when you register, submit forms, subscribe, or place orders. This data helps us fulfill requests, send important updates, and enhance user experience.
                     </p>
 
                     <h3>Data Protection</h3>
                     <p>
-                        Your personal data is stored on secure servers and accessed only by authorized personnel.
-                        Sensitive information is encrypted via SSL. We regularly scan for vulnerabilities.
+                        Your data is stored on protected servers and is accessible only to authorized team members. Sensitive details are secured through SSL encryption. Routine security checks help protect against potential vulnerabilities.
                     </p>
 
                     <h3>Cookies</h3>
                     <p>
-                        We use cookies to remember your preferences, optimize site performance, and collect
-                        anonymous usage analytics. You can disable cookies in your browser settings, though
-                        some site features may not function correctly.
+                        Cookies are used to save user preferences, improve website speed, and gather anonymized usage statistics. You may disable cookies in your browser; however, certain functions of the site may not work as intended.
                     </p>
 
                     <h3>Third-Party Services</h3>
                     <p>
-                        We do not sell or share your personal data with third parties except service providers
-                        who support our site operations under confidentiality agreements.
+                        We do not sell or disclose your personal data to outside parties, except for trusted partners assisting in site management under strict confidentiality agreements.
                     </p>
 
                     <h3>Children’s Privacy</h3>
                     <p>
-                        We do not knowingly collect personal data from children under the age of 13. If we become
-                        aware of such data, we will delete it immediately.
+                        We do not knowingly collect personal information from children under 13. If such data is identified, we will promptly remove it from our systems.
                     </p>
 
                     <h3>Changes to This Policy</h3>
                     <p>
-                        We may update this Privacy Policy at any time. The latest version will always be posted
-                        here. Continued use of the site constitutes acceptance of any changes.
+                        We reserve the right to update this Privacy Policy at any time. The most current version will always appear on this page. Your continued use of the website implies acceptance of those updates.
                     </p>
                 </main>
             </section>
+
 
         </>
     )

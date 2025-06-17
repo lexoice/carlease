@@ -47,3 +47,7 @@ next-env.d.ts
 .Trashes
 ehthumbs.db
 Thumbs.db 
+
+# Sitemap files
+public/sitemap-0.xml
+public/sitemap.xml
