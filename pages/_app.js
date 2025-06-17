@@ -7,11 +7,13 @@ import Modal from '../components/UI/Modal'
 import ChatWidget from '../components/UI/ChatWidget'
 import FixedQuoteButton from '../components/UI/FixedQuoteButton'
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 function MyApp({ Component, pageProps, makes }) {
   return (
     <>
+      <SpeedInsights />
       <Analytics />
       <Script
         src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
