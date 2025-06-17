@@ -21,9 +21,9 @@ const SingleCarLease = ({ ssrCar }) => {
 
   const gallery = car.gallery?.[selectedColorIndex] || {};
   const images = [
-    gallery.front && { src: gallery.front, alt: "Front view" },
-    gallery.side && { src: gallery.side, alt: "Side view" },
-    gallery.back && { src: gallery.back, alt: "Back view" },
+    gallery.front && { src: gallery.front, alt: `${car.make} ${car.model} ${car.colors?.[selectedColorIndex]?.name || ''} - Front view` },
+    gallery.side && { src: gallery.side, alt: `${car.make} ${car.model} ${car.colors?.[selectedColorIndex]?.name || ''} - Side view` },
+    gallery.back && { src: gallery.back, alt: `${car.make} ${car.model} ${car.colors?.[selectedColorIndex]?.name || ''} - Back view` },
   ].filter(Boolean);
 
   const navSettings = {
@@ -87,6 +87,7 @@ const SingleCarLease = ({ ssrCar }) => {
                       key={idx}
                       src={img.src} 
                       alt={img.alt}
+                      title={img.alt}
                       width={240}
                       height={160}
                       priority
@@ -113,7 +114,7 @@ const SingleCarLease = ({ ssrCar }) => {
                   >
                     {images.map((img, idx) => (
                       <div key={idx} className="details-car-show">
-                        <Image src={img.src} alt={img.alt} width={868} height={560} priority />
+                        <Image src={img.src} alt={img.alt} title={img.alt} width={868} height={560} priority />
                       </div>
                     ))}
                   </Slider>

@@ -10,8 +10,8 @@ export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
       <Seo
         title={`Auto Leasing in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
         description="Discover the best car lease deals in Philadelphia. Drive the vehicle you want at a monthly payment you can afford. Flexible terms and $0 down options available."
-        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/`}
-        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/`}
+        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
+        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals`}
       />
 
       <Breadcrumbs />
