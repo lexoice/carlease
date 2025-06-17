@@ -14,8 +14,8 @@ export default function TradeInsPage() {
                 title={`Lease Termination in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`End your car lease in Philadelphia without hidden fees or surprises. Learn how to avoid penalties and return your lease smoothly with help from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
 
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-termination/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-termination/`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-termination`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-termination`}
             />
 
             <Breadcrumbs />

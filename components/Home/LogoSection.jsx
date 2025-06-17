@@ -5,7 +5,7 @@ const LogoSection = () => {
     return (
         <section className="brand-logo-sec">
             <div className="overflow-auto">
-                <Image src="/images/brandBg.png" alt="brand" width={1608} height={62} loading="lazy" />
+                <Image src="/images/brandBg.png" alt="brands" width={1608} height={62} loading="lazy" />
             </div>
         </section>
     );

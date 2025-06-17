@@ -8,8 +8,8 @@ export default function AccessibilityPage() {
             <Seo
                 title={`Business Car Leasing | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/business-leasing/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/business-leasing/`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/business-leasing`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/business-leasing`}
             />
 
             <Breadcrumbs />

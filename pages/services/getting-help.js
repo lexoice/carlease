@@ -13,8 +13,8 @@ export default function TradeInsPage() {
             <Seo
                 title={`Sell Your Car in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Sell your car quickly in Philadelphia for instant cash. Same-day pick-up and a fair, no-obligation offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/getting-help/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/getting-help/`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/getting-help`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/getting-help`}
             />
 
             <Breadcrumbs />

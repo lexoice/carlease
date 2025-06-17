@@ -11,7 +11,6 @@ const SimilarCar = ({ body_type }) => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  // Парсим min/max из query или ставим дефолт
   const min = parseInt(qMin, 10) || 0
   const max = parseInt(qMax, 10) || 1500
 
@@ -24,12 +23,10 @@ const SimilarCar = ({ body_type }) => {
         const cars = data.cars || []
         let filteredCars = cars
 
-        // Фильтруем по body_type если он указан
         if (body_type) {
           filteredCars = filteredCars.filter(car => car.body_type === body_type)
         }
 
-        // Перемешиваем и берем первые 8
         const shuffled = filteredCars.sort(() => 0.5 - Math.random())
         setSimilarCars(shuffled.slice(0, 8))
       })

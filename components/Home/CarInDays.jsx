@@ -5,57 +5,48 @@ const CarInDays = () => {
     <section className="car-in-days-sec">
       <div className="car-in-day-wrp">
         <div className="car-in-left">
-          <h2 className="heading">An atypical Car Leasing Company</h2>
+          <h2 className="heading">A Different Kind of Car Leasing Company</h2>
           <p>
-            Philadelphia Car Leasing is a relatively new company in this
-            city-county. While new, we are also one of the most innovative in
-            the entire state; not just the county. A common problem when it
-            comes to most people who try to lease a vehicle nearly anywhere in
-            the state is one of two. The first issue is that the vehicle they
-            want is available, but it is simply too overpriced. This can put
-            anyone off. While you may be able to afford the car leasing
-            contract, it feels like you are being cheated. This is hardly
-            appealing enough a reason to get the auto lease you want.
+            Philadelphia Car Leasing may be a newer name in the city, but we’re
+            quickly becoming one of the most forward-thinking leasing companies
+            in all of Pennsylvania. A major challenge drivers often face when
+            leasing a car is either inflated pricing or lack of vehicle
+            availability. Even if the lease terms seem manageable, many people
+            walk away feeling like the cost doesn’t reflect the car’s real
+            value—which makes the experience feel less than satisfying.
           </p>
           <p>
-            Another common issue that faces most people who walk into an auto
-            leasing agency is that they can’t find the car they want. When
-            someone sees a gorgeous looking vehicle on the internet or on TV,
-            they just HAVE to have it sometimes. This is unavoidable in most
-            people. However, the problem is that most car dealerships simply
-            don’t stack the cars you have your heart set upon. The car you crave
-            simply isn’t in stock, and that sucks!
+            Another common frustration is searching for a specific model you've
+            seen online or in an ad, only to find it’s unavailable. Traditional
+            dealerships often carry limited inventory, making it hard to secure
+            the exact vehicle you’ve set your sights on. When the car you want
+            isn’t in stock, it’s a major letdown.
           </p>
 
-          <h2>Philadelphia Car Leasing is the Cavalry</h2>
+          <h2>Why Philadelphia Car Leasing Stands Out</h2>
           <p>
-            Here at our auto leasing company, you can get a far better
-            experience than you can hope to anywhere else. See, we don’t care
-            about the money as much as we do about you. This is the biggest
-            difference between our company and pretty much every other car
-            leasing agency out there. This is also the reason that we have so
-            many high ratings from our customers. We have a lot of return
-            business because of our consistently talked up service. We offer you
-            the lowest auto leasing deals and car leasing specials in the entire
-            county of Philadelphia, because we are innovative in the best ways
-            possible.
+            At Philadelphia Car Leasing, we put people before profit. Our
+            priority is giving you the best possible leasing experience—one
+            that’s affordable, transparent, and stress-free. That commitment has
+            earned us outstanding reviews and loyal customers who return time
+            and again.
           </p>
           <p>
-            We help you achieve the lease car of your dreams by making it
-            affordable enough to buy the car on a tight budget. This is what we
-            do, and our customers love us for it. One of our other most
-            attractive features is that we stock virtually every brand of car
-            out there. We do this so that whatever you are looking for, as long
-            as it is not discontinued, you will find it here at our car leasing
-            agency. Add this to our excellent customer service and unbiased
-            representatives and you have yourself a car leasing agency made in
-            heaven!
+            We’re known for offering some of the lowest lease prices in the
+            Philadelphia area. Our innovative approach allows us to help clients
+            lease the cars they truly want—even on a budget. What sets us apart
+            is not only our pricing, but also our wide selection: we work with
+            nearly every major brand, giving you access to an extensive
+            inventory that most local dealerships simply can’t match.
           </p>
           <p>
-            Contact us now on{" "}
-            <a href="tel:570698CARS(2277)">570-698-CARS (2277)</a> and find out
-            more about our amazing auto leasing specials. Or you could just
-            browse our online store!
+            Add in our knowledgeable, customer-focused team—and you’ve got a
+            leasing experience that’s tailored, honest, and refreshingly simple.
+          </p>
+          <p>
+            Call us today at <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a> to
+            learn more about our lease specials, or explore our inventory online
+            anytime.
           </p>
         </div>
       </div>

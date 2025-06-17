@@ -13,8 +13,8 @@ export default function TradeInsPage() {
             <Seo
                 title={`Trade-In Appraisals in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Get a free, no-obligation trade-in appraisal in Philadelphia. Apply your car’s value toward your next lease. Fast, stress-free process with top trade-in offers. Call 570-698-2277 to schedule.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins/`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/trade-ins`}
             />
 
             <Breadcrumbs />
