@@ -7,28 +7,28 @@ const Counter = () => {
                 <div className="counter-wrp">
                     <div className="single-counter">
                         <div>
-                            <h2><span className="counter" data-count="4000" ended="true">4000</span>+</h2>
+                            <h2><span className="counter">4000</span>+</h2>
                             <p>5.0 Star Trusted <br />Reviews</p>
                         </div>
                     </div>
 
                     <div className="single-counter two">
                         <div>
-                            <h2><span className="counter" data-count="200" ended="true">200</span>k+</h2>
+                            <h2><span className="counter">200</span>k+</h2>
                             <p>Cars Delivered</p>
                         </div>
                     </div>
 
                     <div className="single-counter three">
                         <div>
-                            <h2><span className="counter" data-count="200" ended="true">200</span>k+</h2>
+                            <h2><span className="counter">200</span>k+</h2>
                             <p>Monthly <br />Visitors</p>
                         </div>
                     </div>
 
                     <div className="single-counter four">
                         <div>
-                            <h2><span className="counter" data-count="150" ended="true">150</span>k+</h2>
+                            <h2><span className="counter">150</span>k+</h2>
                             <p>Cars Purchased <br />Successfully</p>
                         </div>
                     </div>
