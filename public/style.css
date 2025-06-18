@@ -3155,7 +3155,7 @@ input:focus {
 .brand-logo a {
     width: 115px;
     height: 100px;
-    background: url('images/allLogoBrand.png') no-repeat;
+    background: url('images/allLogoBrand.webp') no-repeat;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     -webkit-transition: .3s;
