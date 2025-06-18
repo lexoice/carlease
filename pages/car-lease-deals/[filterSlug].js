@@ -65,28 +65,30 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { filterSlug } = params
-  const base = filterSlug.replace(/-lease-specials$/, '').toLowerCase()
+  const { filterSlug } = params;
+  const base = filterSlug.replace(/-lease-specials$/, '').toLowerCase();
 
-  // Одновременно загружаем список марок и типов кузова
   const [makes, bodyTypes] = await Promise.all([
     getMakes(),
-    getBodyTypes()
-  ])
+    getBodyTypes(),
+  ]);
 
-  const makeSlugs = makes.map(m => m.slug.toLowerCase())
-  const bodySlugs = bodyTypes.map(b => b.slug.toLowerCase())
+  const makeSlugs = makes.map((m) => m.slug.toLowerCase());
+  const bodySlugs = bodyTypes.map((b) => b.slug.toLowerCase());
 
-  let filterType = null
-  if (makeSlugs.includes(base)) filterType = 'make'
-  else if (bodySlugs.includes(base)) filterType = 'body_type'
+  let filterType = null;
+  if (makeSlugs.includes(base)) filterType = 'make';
+  else if (bodySlugs.includes(base)) filterType = 'body_type';
+  else {
 
-  // Первые 12 машин под выбранный фильтр
-  const paramsObj = { page: 1, per_page: 12 }
-  if (filterType === 'make') paramsObj.make = base
-  else if (filterType === 'body_type') paramsObj.body_type = base
+    return { notFound: true };
+  }
 
-  const data = await getDeals(paramsObj)
+  const paramsObj = { page: 1, per_page: 12 };
+  if (filterType === 'make') paramsObj.make = base;
+  else if (filterType === 'body_type') paramsObj.body_type = base;
+
+  const data = await getDeals(paramsObj);
 
   return {
     props: {
@@ -95,8 +97,8 @@ export async function getStaticProps({ params }) {
       base,
       filterType,
       filterSlug,
-      makes,    // SSR-список makes для Sidebar
+      makes,
     },
     revalidate: 86400,
-  }
+  };
 }
