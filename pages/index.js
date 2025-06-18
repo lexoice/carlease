@@ -1,5 +1,3 @@
-// pages/index.js
-
 import Seo from '../components/UI/Seo'
 import Hero from '../components/Home/Hero'
 import LogoSection from '../components/Home/LogoSection'
