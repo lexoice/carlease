@@ -2625,7 +2625,7 @@ input:focus {
     top: -140px;
     left: 0;
     z-index: -1;
-    background: url('images/car/sameCarBg.png') no-repeat;
+    background: url('images/car/sameCarBg.webp') no-repeat;
     background-size: contain;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
