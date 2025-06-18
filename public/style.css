@@ -1899,7 +1899,7 @@ input:focus {
 /* about left  */
 
 .about-left {
-    background: url('images/p3.jpg') no-repeat;
+    background: url('images/p3.webp') no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3032,7 +3032,7 @@ input:focus {
 }
 
 .left-custo {
-    background: url('images/p5.png') no-repeat;
+    background: url('images/p5.webp') no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
