@@ -6,6 +6,7 @@ import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import SingleCarForm from '../../components/SingleCarForm'
 import MakeList from '../../components/Home/MakeList'
 import DealerSection from '../../components/Home/DealerSection'
+import PhoneLink from '../../components/UI/PhoneLink'
 
 export default function TradeInsPage() {
     return (
@@ -48,10 +49,10 @@ export default function TradeInsPage() {
                     </p>
 
                     <p>
-                        Every vehicle has its own care requirements, just like every driver has unique habits. That’s why we take the time to explain everything clearly and thoroughly. Many leasing companies skip this step, but we believe in doing things differently. To learn more about our lease return process—or to get personalized advice—give us a call at <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a>. We're here to help you return your lease vehicle smoothly and stress-free.
+                        Every vehicle has its own care requirements, just like every driver has unique habits. That’s why we take the time to explain everything clearly and thoroughly. Many leasing companies skip this step, but we believe in doing things differently. To learn more about our lease return process—or to get personalized advice—give us a call at <PhoneLink />. We're here to help you return your lease vehicle smoothly and stress-free.
                     </p>
 
-                    <SingleCarForm />
+                    <SingleCarForm title="Lease Return Form" />
 
                 </main>
 

@@ -20,7 +20,7 @@ export default function DealsByFilterPage({
     <>
       <Seo
         title={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials · Monthly Lease Specials (New) · ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-        description={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials in Philadelphia at ${process.env.NEXT_PUBLIC_SITE_NAME}: ☎ ${process.env.NEXT_PUBLIC_PHONE} Get access to exclusive lease offers, limited-time discounts, and top monthly specials. Short-term and long-term leasing available. Best car lease deals in Philadelphia. Affordable pricing and offers you won’t find listed elsewhere.`}
+        description={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials in Philadelphia at ${process.env.NEXT_PUBLIC_SITE_NAME}: Get access to exclusive lease offers, limited-time discounts, and top monthly specials. Short-term and long-term leasing available. Best car lease deals in Philadelphia. Affordable pricing and offers you won’t find listed elsewhere.`}
         canonical={canonicalUrl}
         ogUrl={canonicalUrl}
       />
@@ -29,10 +29,11 @@ export default function DealsByFilterPage({
 
       <div className="inner-banner-con">
         <div className="inner-banner-left">
-          <h1>{base.charAt(0).toUpperCase() + base.slice(1)} Lease Deals in Philadelphia, PA</h1>
+          <h1>{base.charAt(0).toUpperCase() + base.slice(1)} Lease Deals in Philadelphia, PA <br/> for {new Date(2025, 5).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</h1>
           <p>
             Explore the Best Car Lease Offers in Philadelphia | $0 Down Lease Specials Available
           </p>
+
         </div>
         <div className="inner-banner-right-area">
           <div className="inner-banner-right">

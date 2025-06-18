@@ -6,6 +6,7 @@ import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import SingleCarForm from '../../components/SingleCarForm'
 import MakeList from '../../components/Home/MakeList'
 import DealerSection from '../../components/Home/DealerSection'
+import PhoneLink from '../../components/UI/PhoneLink'
 
 export default function TradeInsPage() {
     return (
@@ -33,10 +34,10 @@ export default function TradeInsPage() {
 
                     <h2>We're Here to Help You Sell</h2>
                     <p>
-                        Whether you're looking to sell your current vehicle to upgrade or simply want to get the best price without the hassle, our Philadelphia team is here to help. We buy, sell, and lease cars every day, and our focus is always on top-tier customer service. If you’d like to speak with one of our representatives about selling your car in Philadelphia, call us today at <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a>.
+                        Whether you're looking to sell your current vehicle to upgrade or simply want to get the best price without the hassle, our Philadelphia team is here to help. We buy, sell, and lease cars every day, and our focus is always on top-tier customer service. If you’d like to speak with one of our representatives about selling your car in Philadelphia, call us today at <PhoneLink />.
                     </p>
 
-                    <SingleCarForm />
+                    <SingleCarForm title="Sell Your Car Form" />
 
                 </main>
 

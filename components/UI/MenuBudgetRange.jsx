@@ -1,5 +1,3 @@
-// components/UI/MenuBudgetRange.jsx
-
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -7,14 +5,12 @@ const MenuBudgetRange = ({ min = 0, max = 1500, step = 1 }) => {
   const router = useRouter()
   const { min: qMin, max: qMax } = router.query
 
-  // Парсим параметры из URL или используем дефолтные
   const initialMin = !isNaN(Number(qMin)) ? Number(qMin) : min
   const initialMax = !isNaN(Number(qMax)) ? Number(qMax) : max
 
   const [rangeMin, setRangeMin] = useState(initialMin)
   const [rangeMax, setRangeMax] = useState(initialMax)
 
-  // Синхронизируемся с query при его изменении
   useEffect(() => {
     if (qMin !== undefined || qMax !== undefined) {
       setRangeMin(!isNaN(Number(qMin)) ? Number(qMin) : min)

@@ -1,6 +1,8 @@
 import Seo from '../components/UI/Seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 import SingleCarForm from '../components/SingleCarForm'
+import MakeList from '../components/Home/MakeList'
+import PhoneLink from '../components/UI/PhoneLink'
 
 export default function ContactPage() {
     return (
@@ -51,7 +53,7 @@ export default function ContactPage() {
                                 <p>
                                     Cheapest short or long term car lease deals. Bad credit? Not a problem
                                 </p>
-                                <a href="tel:+17188712277">(718) 871-2277</a>
+                                <PhoneLink />
                                 <p>*Same-day delivery available.</p>
                             </div>
                         </div>
@@ -88,6 +90,8 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+            <MakeList />
+
         </>
     )
 }

@@ -3,6 +3,7 @@ import Seo from '../../../components/UI/Seo'
 import Breadcrumbs from '../../../components/UI/Breadcrumbs'
 import SingleCarLease from '../../../components/CarSection/SingleCarLease'
 
+
 export default function CarDetailPage({ ssrCar, make }) {
   const filterSlug   = `${make}-lease-specials`
   const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/${filterSlug}/${ssrCar?.slug}`
@@ -11,7 +12,7 @@ export default function CarDetailPage({ ssrCar, make }) {
     <>
       <Seo
         title={`Best car lease for ${ssrCar?.title} · ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-        description={`Get the best ${ssrCar?.title} lease offers from ${process.env.NEXT_PUBLIC_SITE_NAME}. ☎ ${process.env.NEXT_PUBLIC_PHONE} Access exclusive deals on reduced-price lease vehicles, monthly specials, and hard-to-find limited-time discounts. Flexible short- and long-term leasing options. Top car lease offers in Philadelphia. Many of our best deals are not listed online.`}
+        description={`Get the best ${ssrCar?.title} lease offers from ${process.env.NEXT_PUBLIC_SITE_NAME}. Access exclusive deals on reduced-price lease vehicles, monthly specials, and hard-to-find limited-time discounts. Flexible short- and long-term leasing options. Top car lease offers in Philadelphia. Many of our best deals are not listed online.`}
         canonical={canonicalUrl}
         ogUrl={canonicalUrl}
       />

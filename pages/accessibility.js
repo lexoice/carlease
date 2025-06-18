@@ -1,6 +1,7 @@
 import React from 'react'
 import Seo from '../components/UI/Seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
+import PhoneLink from '../components/UI/PhoneLink'
 
 export default function AccessibilityPage() {
     return (
@@ -50,7 +51,7 @@ export default function AccessibilityPage() {
                     </ul>
 
                     <h2>Contact Us</h2>
-                    <p>If you encounter any accessibility barriers, have questions, or need assistance, please reach out to us at <a href="tel:+17188712277">718-871-2277</a>.</p>
+                    <p>If you encounter any accessibility barriers, have questions, or need assistance, please reach out to us at <PhoneLink />.</p>
                 </main>
             </section>
 

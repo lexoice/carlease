@@ -6,6 +6,7 @@ import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import SingleCarForm from '../../components/SingleCarForm'
 import MakeList from '../../components/Home/MakeList'
 import DealerSection from '../../components/Home/DealerSection'
+import PhoneLink from '../../components/UI/PhoneLink'
 
 export default function TradeInsPage() {
     return (
@@ -41,10 +42,10 @@ export default function TradeInsPage() {
                         At Philadelphia Car Leasing, we take the time to clearly explain every aspect of your lease so there are no surprises down the road. Many drivers face penalties simply because important terms were never fully explained. We make transparency a priority—our goal is to help you avoid unnecessary fees and ensure a smooth, stress-free lease return experience.
                     </p>
                     <p>
-                        Our experienced leasing agents will guide you through maintenance tips and best practices for keeping your vehicle in great condition throughout your lease. Each car has specific needs, and our team will help you stay on track so your vehicle meets return standards. To learn more about our lease termination process, <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a> today. We’re happy to walk you through everything to make sure your lease ends without surprise costs.
+                        Our experienced leasing agents will guide you through maintenance tips and best practices for keeping your vehicle in great condition throughout your lease. Each car has specific needs, and our team will help you stay on track so your vehicle meets return standards. To learn more about our lease termination process, <PhoneLink /> today. We’re happy to walk you through everything to make sure your lease ends without surprise costs.
                     </p>
 
-                    <SingleCarForm />
+                    <SingleCarForm title="Lease Termination Form" />
 
                 </main>
 

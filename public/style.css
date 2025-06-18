@@ -3652,9 +3652,9 @@ input:focus {
 
 .inner-banner-left h1 {
     font-family: Big Shoulders Display;
-    font-size: 75px;
+    font-size: 68px;
     font-weight: 800;
-    line-height: 75px;
+    line-height: 68px;
     text-transform: uppercase;
 
     background: var(--gradient-color);
@@ -3710,7 +3710,7 @@ input:focus {
     position: relative;
     z-index: 2;
     padding: 25px 190px 25px 50px;
-    max-width: 650px;
+    max-width: 655px;
 }
 
 .inner-banner-sec.border-none .inner-banner-right {
@@ -4752,7 +4752,7 @@ input:focus {
 
 .details-frm form input {
     width: calc(34.33% - 47px);
-    color: rgb(17 17 17 / 25%);
+    color: #272321;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
@@ -5938,7 +5938,7 @@ input:focus {
     .inner-banner-right {
         padding: 25px;
         max-width: 100%;
-        min-width: 455px;
+        min-width: 465px;
     }
 
     .inner-banner-right::after {
@@ -9035,6 +9035,14 @@ input:focus {
     .banner-car img {
         height: fit-content;
         object-fit: contain;
+    }
+
+    .car-full-slider img {
+        object-fit: contain;
+        height: auto;
+    }
+    .details-head {
+        width: 100%;
     }
 }
 

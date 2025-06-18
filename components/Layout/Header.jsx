@@ -1,5 +1,3 @@
-// components/Layout/Header.jsx
-
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -9,6 +7,7 @@ import MenuBodyList from "../UI/MenuBodyList";
 import MenuModelList from "../UI/MenuModelList";
 import MenuMakeList from "../UI/MenuMakeList";
 import MenuBudgetRange from "../UI/MenuBudgetRange";
+import PhoneLink from "../UI/PhoneLink";
 
 const Header = ({ makes = [] }) => {
   const router = useRouter();
@@ -159,7 +158,7 @@ const Header = ({ makes = [] }) => {
 
             <div className="header-right">
               <div className="header-call">
-                <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a>
+                <PhoneLink />
                 <span>Request A Callback Or Text Us</span>
               </div>
               <div

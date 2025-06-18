@@ -6,6 +6,7 @@ import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import SingleCarForm from '../../components/SingleCarForm'
 import MakeList from '../../components/Home/MakeList'
 import DealerSection from '../../components/Home/DealerSection'
+import PhoneLink from '../../components/UI/PhoneLink'
 
 export default function TradeInsPage() {
     return (
@@ -34,10 +35,10 @@ export default function TradeInsPage() {
 
                     <h2>Speak with Our Philadelphia Financing Team</h2>
                     <p>
-                        Ready to lease your next car? Reach out to our Philadelphia financing department to explore your options. We’re committed to helping you lock in the lowest interest rates available so you can enjoy affordable monthly payments. No matter what kind of vehicle you’re interested in, we’re here to make financing simple and stress-free. Give us a call today at <a href="tel:+17183935620">718-393-5620</a> to speak with one of our knowledgeable team members. Thank you for choosing us for your auto financing needs in Philadelphia.
+                        Ready to lease your next car? Reach out to our Philadelphia financing department to explore your options. We’re committed to helping you lock in the lowest interest rates available so you can enjoy affordable monthly payments. No matter what kind of vehicle you’re interested in, we’re here to make financing simple and stress-free. Give us a call today at <PhoneLink /> to speak with one of our knowledgeable team members. Thank you for choosing us for your auto financing needs in Philadelphia.
                     </p>
 
-                    <SingleCarForm />
+                    <SingleCarForm title="Auto Finance Form" />
 
                 </main>
 

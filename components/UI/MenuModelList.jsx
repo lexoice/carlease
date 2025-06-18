@@ -1,5 +1,3 @@
-// components/UI/MenuModelList.jsx
-
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { getMakes } from '../../lib/api/getMakes'

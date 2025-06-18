@@ -1,4 +1,5 @@
 import React from "react";
+import PhoneLink from "../UI/PhoneLink";
 
 const CarInDays = () => {
   return (
@@ -44,7 +45,7 @@ const CarInDays = () => {
             leasing experience that’s tailored, honest, and refreshingly simple.
           </p>
           <p>
-            Call us today at <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a> to
+            Call us today at <PhoneLink /> to
             learn more about our lease specials, or explore our inventory online
             anytime.
           </p>

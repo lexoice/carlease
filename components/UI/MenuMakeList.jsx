@@ -1,9 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-/**
- * Теперь просто рендерит переданный из SSR массив makes.
- */
+
 const MenuMakeList = ({ makes = [] }) => {
   if (!makes.length) {
     return <p>No manufacturers found.</p>

@@ -4,7 +4,7 @@ import { sendLead } from '../lib/api/send'
 
 const RECAPTCHA_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
 
-const SingleCarForm = ({ make, model }) => {
+const SingleCarForm = ({ make, model, title }) => {
   const router = useRouter()
   const [openTs] = useState(() => Math.floor(Date.now() / 1000))
   const [formData, setFormData] = useState({
@@ -63,7 +63,7 @@ const SingleCarForm = ({ make, model }) => {
 
   return (
     <div className="details-frm">
-      <h2>Quick Free Quote</h2>
+      <h2>{title ? title : 'Quick Free Quote'}</h2>
       <form onSubmit={handleSubmit}>
         <input
           name="name"

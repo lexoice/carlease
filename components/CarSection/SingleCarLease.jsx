@@ -7,6 +7,7 @@ import SingleCarForm from "../../components/SingleCarForm";
 import { ModalContext } from "../../contexts/ModalContext";
 import DealerSection from "../Home/DealerSection";
 import Image from 'next/image'
+import PhoneLink from "../UI/PhoneLink";
 
 const SingleCarLease = ({ ssrCar }) => {
   const car = ssrCar;
@@ -76,7 +77,7 @@ const SingleCarLease = ({ ssrCar }) => {
         <div className="details-wrap">
           <div className="details-left-area">
             <div className="details-left">
-              <div className="detail-car-nav">
+              <div className="detail-car-nav car-previews-slider">
                 <Slider
                   ref={sliderNavRef}
                   {...navSettings}
@@ -106,7 +107,7 @@ const SingleCarLease = ({ ssrCar }) => {
                     {car.badge_text}
                   </span>
                 )}
-                <div className="details-car-caro">
+                <div className="details-car-caro car-full-slider">
                   <Slider
                     ref={sliderMainRef}
                     {...mainSettings}
@@ -197,7 +198,7 @@ const SingleCarLease = ({ ssrCar }) => {
                 Cheapest short or long term car lease deals. Bad credit? Not a
                 problem.
               </p>
-              <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a>
+              <PhoneLink />
               <p>*Same-day delivery available.</p>
             </div>
           </div>

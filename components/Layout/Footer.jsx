@@ -1,9 +1,9 @@
-// components/Layout/Footer.jsx
 import React, { useContext } from 'react'
 import Link from 'next/link'
 import { ModalContext } from '../../contexts/ModalContext'
 import Modal from '../UI/Modal'
 import Image from 'next/image'
+import PhoneLink from '../UI/PhoneLink'
 
 const Footer = () => {
   const { modalData, closeModal } = useContext(ModalContext)
@@ -18,7 +18,7 @@ const Footer = () => {
               <p>Contact us today for a free quote on any auto make or model!</p>
               <ul>
                 <li>
-                  <a className="call" href={`tel:${process.env.NEXT_PUBLIC_PHONE_CODE}`}>{process.env.NEXT_PUBLIC_PHONE}</a>
+                  <PhoneLink className="call" />
                 </li>
               </ul>
               <h3>Other Leasing Locations:</h3>
@@ -72,10 +72,10 @@ const Footer = () => {
                 All rights reserved. Operated by <a className="e-copy" href="https://www.eautolease.com/" rel="nofollow" >eAutoLease.com</a>
               </p>
               <ul>
-                <li><Link href="/accessibility">Accessibility</Link></li>
-                <li><Link href="/terms-of-service">Term of Service</Link></li>
-                <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link href="/code-of-ethics">Code of Ethics</Link></li>
+                <li><Link rel="noindex nofollow" href="/accessibility">Accessibility</Link></li>
+                <li><Link rel="noindex nofollow" href="/terms-of-service">Term of Service</Link></li>
+                <li><Link rel="noindex nofollow" href="/privacy-policy">Privacy Policy</Link></li>
+                <li><Link rel="noindex nofollow" href="/code-of-ethics">Code of Ethics</Link></li>
               </ul>
             </div>
           </div>

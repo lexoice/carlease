@@ -6,6 +6,7 @@ import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import SingleCarForm from '../../components/SingleCarForm'
 import MakeList from '../../components/Home/MakeList'
 import DealerSection from '../../components/Home/DealerSection'
+import PhoneLink from '../../components/UI/PhoneLink'
 
 export default function TradeInsPage() {
     return (
@@ -33,10 +34,10 @@ export default function TradeInsPage() {
 
                     <h2>Your Lease Transfer Specialists in Philadelphia</h2>
                     <p>
-                        Our Philadelphia-based team is ready to help you find someone to take over your lease. We assist drivers daily with lease-related needs and can guide you through every step of the transfer process. Whether you're ready to begin or just exploring your options, we’ll provide straightforward advice and full support. To get started, call us at <a href="tel:+17183935620">718-393-5620</a> and speak with one of our lease specialists in Philadelphia.
+                        Our Philadelphia-based team is ready to help you find someone to take over your lease. We assist drivers daily with lease-related needs and can guide you through every step of the transfer process. Whether you're ready to begin or just exploring your options, we’ll provide straightforward advice and full support. To get started, call us at <PhoneLink /> and speak with one of our lease specialists in Philadelphia.
                     </p>
 
-                    <SingleCarForm />
+                    <SingleCarForm title="Lease Transfer Form" />
 
                 </main>
 
