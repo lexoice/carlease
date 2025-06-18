@@ -52,5 +52,3 @@ module.exports = {
       }
     },
   }
-  // get-deals.php?page=1&per_page=-1 выведет список все авто "link": "/car-lease-deals/nissan-lease-specials/nissan-altima/",
-  // /api/get-makes.php вывдет список всех производителей но линк должен быть такой slug: /car-lease-deals/[slug]-lease-specials
