@@ -102,7 +102,7 @@
     src: url('fonts/Lato-Light.woff2') format('woff2'), url('fonts/Lato-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
@@ -110,7 +110,7 @@
     src: url('fonts/Lato-Regular.woff2') format('woff2'), url('fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
@@ -118,7 +118,7 @@
     src: url('fonts/BigShouldersDisplay-Thin.woff2') format('woff2'), url('fonts/BigShouldersDisplay-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
@@ -126,7 +126,7 @@
     src: url('fonts/BigShouldersDisplay-ExtraBold.woff2') format('woff2'), url('fonts/BigShouldersDisplay-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
@@ -134,7 +134,7 @@
     src: url('fonts/BigShouldersDisplay-Regular.woff2') format('woff2'), url('fonts/BigShouldersDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
@@ -142,7 +142,7 @@
     src: url('fonts/BigShouldersDisplay-SemiBold.woff2') format('woff2'), url('fonts/BigShouldersDisplay-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 
