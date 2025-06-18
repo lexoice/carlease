@@ -23,7 +23,7 @@ export default function HomePage() {
 
             <Hero />
             <LogoSection />
-            <DealerSection />
+            {/* <DealerSection /> */}
             <About />
             <Counter />
             <CarSectionHome />
