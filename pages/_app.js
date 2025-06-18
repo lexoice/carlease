@@ -15,15 +15,7 @@ function MyApp({ Component, pageProps, makes }) {
     <>
       <SpeedInsights />
       <Analytics />
-      <Script
-        src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-        strategy="lazyOnload"
-        onLoad={() => {
-          setTimeout(() => {
 
-          }, 2000)
-        }}
-      />
 
       <ModalProvider>
         <Header makes={makes} />

@@ -27,6 +27,21 @@ export default function Modal({ isOpen, onClose, data }) {
     setFormData((f) => ({ ...f, [name]: value }));
   };
 
+  const loadRecaptchaScript = () =>
+    new Promise((resolve, reject) => {
+      if (window.grecaptcha) {
+        return resolve();
+      }
+
+      const script = document.createElement("script");
+      script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_KEY}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+
   const getRecaptchaToken = () =>
     new Promise((resolve) => {
       if (!window.grecaptcha) return resolve("");
@@ -43,9 +58,10 @@ export default function Modal({ isOpen, onClose, data }) {
     setLoading(true);
     setFeedback(null);
 
-    const recaptchaToken = await getRecaptchaToken();
-
     try {
+      await loadRecaptchaScript(); // Загружаем скрипт только при отправке
+      const recaptchaToken = await getRecaptchaToken();
+
       await sendLead({
         ...formData,
         make: data?.make,
@@ -55,6 +71,7 @@ export default function Modal({ isOpen, onClose, data }) {
         site: typeof window !== "undefined" ? window.location.href : "",
         recaptchaToken,
       });
+
       setFeedback({
         type: "success",
         message: "Thank you! We will contact you soon.",
