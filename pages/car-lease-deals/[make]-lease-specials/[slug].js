@@ -5,7 +5,7 @@ import SingleCarLease from '../../../components/CarSection/SingleCarLease'
 
 
 export default function CarDetailPage({ ssrCar, make }) {
-  const filterSlug   = `${make}-lease-specials`
+  const filterSlug = `${make}-lease-specials`
   const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/${filterSlug}/${ssrCar?.slug}`
 
   return (
@@ -40,11 +40,17 @@ export async function getStaticProps({ params }) {
   )
   const car = await res.json()
 
+  if (car.error) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
-      ssrCar: car.error ? null : car,
+      ssrCar: car,
       make,
     },
     revalidate: 86400,
-  }
+  };
 }

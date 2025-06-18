@@ -11,9 +11,6 @@ import PhoneLink from "../UI/PhoneLink";
 
 const SingleCarLease = ({ ssrCar }) => {
   const car = ssrCar;
-  if (!car) {
-    return <p style={{ textAlign: "center" }}>Car not found</p>;
-  }
 
   const [selectedColorIndex, setSelectedColorIndex] = useState(0);
   const { openModal } = useContext(ModalContext);
