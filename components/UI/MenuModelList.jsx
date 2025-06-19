@@ -54,7 +54,9 @@ const MenuModelList = () => {
   }, [selectedMake])
 
   const onSearch = () => {
-    const path = `/car-lease-deals/${selectedMake}-lease-specials/${selectedMake}-${selectedModel}`
+    // Очищаем selectedMake от возможного дублирования lease-specials
+    const cleanMake = selectedMake.replace(/-lease-specials/g, "")
+    const path = `/car-lease-deals/${cleanMake}-lease-specials/${selectedMake}-${selectedModel}`
     router.push(path)
   }
 

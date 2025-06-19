@@ -21,7 +21,8 @@ const CarItem = ({ car }) => {
     slug
   } = car
 
-  const makeSlug = make.toLowerCase().replace(/\s+/g, "-")
+  // Очищаем make от лишних символов и приводим к нижнему регистру
+  const makeSlug = make.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "").replace(/-lease-specials/g, "")
 
   return (
     <div className="single-car">
