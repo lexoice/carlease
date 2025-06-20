@@ -21,7 +21,7 @@ const CarItem = ({ car }) => {
     slug
   } = car
 
-  // Очищаем make от лишних символов и приводим к нижнему регистру
+
   const makeSlug = make.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "").replace(/-lease-specials/g, "")
 
   return (
@@ -47,6 +47,7 @@ const CarItem = ({ car }) => {
             loading="lazy"
             width={377}
             height={295}
+            title={title}
             src={image || "/images/defaultCar.jpg"}
             alt={title}
           />

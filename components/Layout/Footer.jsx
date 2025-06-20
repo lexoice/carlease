@@ -62,6 +62,7 @@ const Footer = () => {
               <Image
                 src="/images/fDealerLogo.png"
                 alt="dealer logos"
+                title="Dealer logos"
                 width={1370}
                 height={192}
               />

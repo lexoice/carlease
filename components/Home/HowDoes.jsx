@@ -14,35 +14,35 @@ const HowDoes = () => {
                     <div className="how-dose-right">
                         <div className="single-dose">
                             <div className="img">
-                                <Image  src="/images/car/dcar1.png" alt="car" width={129} height={59} loading="lazy" />
+                                <Image src="/images/car/dcar1.png" title={`${process.env.NEXT_PUBLIC_SITE_NAME} Choose car`} alt={`${process.env.NEXT_PUBLIC_SITE_NAME} Choose car`} width={129} height={59} loading="lazy" />
                             </div>
                             <p>Choose <br /> Your Car</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <Image src="/images/car/dcar2.png" alt="car" width={129} height={59} loading="lazy" />
+                                <Image src="/images/car/dcar2.png" title={`${process.env.NEXT_PUBLIC_SITE_NAME} Get Your Quote`} alt={`${process.env.NEXT_PUBLIC_SITE_NAME} Get Your Quote`} width={129} height={59} loading="lazy" />
                             </div>
                             <p>Get Your <br /> Quote</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <Image src="/images/car/dcar4.png" alt="car" width={129} height={59} loading="lazy" />
+                                <Image src="/images/car/dcar4.png" title={`${process.env.NEXT_PUBLIC_SITE_NAME} Confirm Quote`} alt={`${process.env.NEXT_PUBLIC_SITE_NAME} Confirm Quote`} width={129} height={59} loading="lazy" />
                             </div>
                             <p>Confirm <br /> Quote</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <Image src="/images/car/dcar4.png" alt="car" width={129} height={59} loading="lazy" />
+                                <Image src="/images/car/dcar4.png" title={`${process.env.NEXT_PUBLIC_SITE_NAME} Locate Your Car`} alt={`${process.env.NEXT_PUBLIC_SITE_NAME} Locate Your Car`} width={129} height={59} loading="lazy" />
                             </div>
                             <p>Locate <br /> Your Car</p>
                         </div>
 
                         <div className="single-dose">
                             <div className="img">
-                                <Image src="/images/car/dcar5.png" alt="car" width={129} height={59} loading="lazy" />
+                                <Image src="/images/car/dcar5.png" title={`${process.env.NEXT_PUBLIC_SITE_NAME} Free delivery`} alt={`${process.env.NEXT_PUBLIC_SITE_NAME} free delivery`} width={129} height={59} loading="lazy" />
                             </div>
                             <p>Free <br /> Delivery</p>
                         </div>

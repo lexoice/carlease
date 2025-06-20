@@ -29,7 +29,7 @@ const Hero = () => {
                         </ul>
                     </div>
                     <div className="banner-car">
-                        <Image src="/images/p1.webp" alt="Car" width={1000} height={500} priority={true}  />
+                        <Image src="/images/p1.webp" alt={`${process.env.NEXT_PUBLIC_SITE_NAME}`} title={`${process.env.NEXT_PUBLIC_SITE_NAME}`} width={1000} height={500} priority={true}  />
                     </div>
                 </div>
             </div>
