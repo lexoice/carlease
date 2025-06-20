@@ -1,74 +1,75 @@
 import React from 'react';
+import Link from 'next/link';
 
 const MenuBodyList = () => {
     return (
         <div className="by_body_wrapper">
             <div className="body_type">
-                <a href="/car-lease-deals/convertible-lease-specials/">
+                <Link href="/car-lease-deals/convertible-lease-specials/">
                     <i className="icon-Convertibles"></i>
                     <span>Convertibles</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/sedan-lease-specials/">
+                <Link href="/car-lease-deals/sedan-lease-specials/">
                     <i className="icon-Sedans"></i><span>Sedans</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/wagon-lease-specials/">
+                <Link href="/car-lease-deals/wagon-lease-specials/">
                     <i className="icon-Wagons"></i><span>Wagons</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/crossover-lease-specials/">
+                <Link href="/car-lease-deals/crossover-lease-specials/">
                     <i className="icon-Crossovers"></i><span>Crossovers</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/coupe-lease-specials/">
+                <Link href="/car-lease-deals/coupe-lease-specials/">
                     <i className="icon-Coupes"></i><span>Coupes</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/minivan-lease-specials/">
+                <Link href="/car-lease-deals/minivan-lease-specials/">
                     <i className="icon-Minivans"></i><span>Minivans</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/sports-lease-specials/">
+                <Link href="/car-lease-deals/sports-lease-specials/">
                     <i className="icon-Sports"></i><span>Sports</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/hatchback-lease-specials/">
+                <Link href="/car-lease-deals/hatchback-lease-specials/">
                     <i className="icon-Hatchbacks"></i>
                     <span>Hatchbacks</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/suv-lease-specials/">
+                <Link href="/car-lease-deals/suv-lease-specials/">
                     <i className="icon-SUVs"></i><span>SUVs</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/trucks-lease-specials/">
+                <Link href="/car-lease-deals/trucks-lease-specials/">
                     <i className="icon-Trucks"></i><span>Trucks</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/hybrid-lease-specials/">
+                <Link href="/car-lease-deals/hybrid-lease-specials/">
                     <i className="icon-Hybrids"></i><span>Hybrids</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/electric-lease-specials/">
+                <Link href="/car-lease-deals/electric-lease-specials/">
                     <i className="icon-Electric"></i><span>Electric</span>
-                </a>
+                </Link>
             </div>
             <div className="body_type">
-                <a href="/car-lease-deals/luxury-lease-specials/">
+                <Link href="/car-lease-deals/luxury-lease-specials/">
                     <i className="icon-Luxury"></i><span>Luxury</span>
-                </a>
+                </Link>
             </div>
         </div>
     );

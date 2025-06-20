@@ -17,7 +17,7 @@ const Breadcrumbs = () => {
             </Link>
             {pathnames.length > 0 && <span> » </span>}
             {pathnames.map((path, index) => {
-              const routeTo = '/' + pathnames.slice(0, index + 1).join('/')
+              const routeTo = '/' + pathnames.slice(0, index + 1).join('/') + '/'
               const name = path
                 .split('-')
                 .map(w => w.charAt(0).toUpperCase() + w.slice(1))

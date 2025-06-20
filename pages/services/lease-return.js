@@ -15,8 +15,8 @@ export default function TradeInsPage() {
                 title={`Lease Return with Philadelphia Car Leasing | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Return your lease vehicle in Philadelphia with confidence. Transparent inspections, no surprise fees, and expert guidance from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
 
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-return`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-return`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-return/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-return/`}
             />
 
             <Breadcrumbs />

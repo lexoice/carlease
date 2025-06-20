@@ -5,6 +5,7 @@ module.exports = {
     sitemapSize: 7000,            // лимит URL на один sitemap-файл
     changefreq: 'daily',          // <changefreq> для всех URL
     priority: 0.7,                // <priority> для всех URL
+    trailingSlash: true,          // добавляет слеш в конце всех URL
     exclude: ['/api/*', '/_next/*'],  // что не включать
     additionalPaths: async (config) => {
       try {
@@ -36,7 +37,7 @@ module.exports = {
         for (const make of makes) {
           if (make && make.slug) {
             paths.push({
-              loc: `/car-lease-deals/${make.slug}-lease-specials`,
+              loc: `/car-lease-deals/${make.slug}-lease-specials/`,
               changefreq: 'daily',
               priority: 0.7,
               lastmod: new Date().toISOString()

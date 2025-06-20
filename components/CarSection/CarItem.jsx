@@ -34,7 +34,7 @@ const CarItem = ({ car }) => {
       </button>
 
       <Link
-        href={`/car-lease-deals/${makeSlug}-lease-specials/${slug}`}
+        href={`/car-lease-deals/${makeSlug}-lease-specials/${slug}/`}
         className="car-item-link"
       >
         <div className="car-thum">

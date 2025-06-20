@@ -6,7 +6,7 @@ import SingleCarLease from '../../../components/CarSection/SingleCarLease'
 
 export default function CarDetailPage({ ssrCar, make }) {
   const filterSlug = `${make}-lease-specials`
-  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/${filterSlug}/${ssrCar?.slug}`
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/${filterSlug}/${ssrCar?.slug}/`
 
   return (
     <>

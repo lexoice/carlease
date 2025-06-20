@@ -8,8 +8,8 @@ export default function AccessibilityPage() {
             <Seo
                 title={`Privacy Policy | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy/`}
             />
 
             <Breadcrumbs />
@@ -68,7 +68,7 @@ export default function AccessibilityPage() {
                         We do not sell or disclose your personal data to outside parties, except for trusted partners assisting in site management under strict confidentiality agreements.
                     </p>
 
-                    <h3>Children’s Privacy</h3>
+                    <h3>Children's Privacy</h3>
                     <p>
                         We do not knowingly collect personal information from children under 13. If such data is identified, we will promptly remove it from our systems.
                     </p>

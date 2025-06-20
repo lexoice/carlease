@@ -14,7 +14,7 @@ export default function DealsByFilterPage({
   filterSlug,
   makes
 }) {
-  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/${filterSlug}`
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/${filterSlug}/`
 
   return (
     <>

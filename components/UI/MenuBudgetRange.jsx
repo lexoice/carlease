@@ -31,7 +31,7 @@ const MenuBudgetRange = ({ min = 0, max = 1500, step = 1 }) => {
   const handleSubmit = e => {
     e.preventDefault()
     router.push({
-      pathname: '/car-lease-deals',
+      pathname: '/car-lease-deals/',
       query: {
         min: rangeMin.toString(),
         max: rangeMax.toString(),

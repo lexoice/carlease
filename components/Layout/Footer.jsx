@@ -72,10 +72,10 @@ const Footer = () => {
                 All rights reserved. Operated by <a className="e-copy" href="https://www.eautolease.com/" rel="nofollow" >eAutoLease.com</a>
               </p>
               <ul>
-                <li><Link rel="noindex nofollow" href="/accessibility">Accessibility</Link></li>
-                <li><Link rel="noindex nofollow" href="/terms-of-service">Term of Service</Link></li>
-                <li><Link rel="noindex nofollow" href="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link rel="noindex nofollow" href="/code-of-ethics">Code of Ethics</Link></li>
+                <li><Link rel="noindex nofollow" href="/accessibility/">Accessibility</Link></li>
+                <li><Link rel="noindex nofollow" href="/terms-of-service/">Term of Service</Link></li>
+                <li><Link rel="noindex nofollow" href="/privacy-policy/">Privacy Policy</Link></li>
+                <li><Link rel="noindex nofollow" href="/code-of-ethics/">Code of Ethics</Link></li>
               </ul>
             </div>
           </div>

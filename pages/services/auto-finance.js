@@ -15,8 +15,8 @@ export default function TradeInsPage() {
                 title={`Auto Financing Options in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Explore flexible car lease financing in Philadelphia with ${process.env.NEXT_PUBLIC_SITE_NAME}. Fast approvals, low interest rates, and personalized terms to match your budget—no hidden fees.`}
 
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/auto-finance`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/auto-finance`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/auto-finance/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/auto-finance/`}
             />
 
             <Breadcrumbs />

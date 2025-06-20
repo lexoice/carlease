@@ -12,8 +12,8 @@ export default function BusinessApplicationPage() {
       <Seo
         title={`Business Credit Application | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
         description={`Fill out our secure business credit application and get a quote from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
-        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application/business`}
-        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application/business`}
+        canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application/personal/`}
+        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application/personal/`}
       />
 
       <Breadcrumbs />

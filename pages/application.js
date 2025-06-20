@@ -18,8 +18,8 @@ export default function ApplicationPage() {
                         : `Business Credit Application | ${process.env.NEXT_PUBLIC_SITE_NAME}`
                 }
                 description={`Fill out our secure credit application and get a quote from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application/`}
             />
 
             <Breadcrumbs />

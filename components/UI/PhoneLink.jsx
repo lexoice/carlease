@@ -1,39 +1,12 @@
 'use client';
-import { useEffect, useState } from 'react';
 
 export default function PhoneLink({ className }) {
-  const [label, setLabel] = useState('');
-  const [href, setHref] = useState('');
-
-  useEffect(() => {
-    const handleActivity = () => {
-      const phone = atob('KDcxOCkgODcxIDIyNzc=');
-      const phoneCode = atob('KzE3MTg4NzEyMjc3');
-
-      setLabel(phone);
-      setHref(`tel:${phoneCode}`);
-
-      // Убираем слушатели, чтобы не срабатывало повторно
-      window.removeEventListener('mousemove', handleActivity);
-      window.removeEventListener('keydown', handleActivity);
-      window.removeEventListener('touchstart', handleActivity);
-    };
-
-    // Добавляем слушатели активности
-    window.addEventListener('mousemove', handleActivity);
-    window.addEventListener('keydown', handleActivity);
-    window.addEventListener('touchstart', handleActivity);
-
-    return () => {
-      window.removeEventListener('mousemove', handleActivity);
-      window.removeEventListener('keydown', handleActivity);
-      window.removeEventListener('touchstart', handleActivity);
-    };
-  }, []);
+  const phone = process.env.NEXT_PUBLIC_PHONE || '(718) 871 1234';
+  const phoneCode = process.env.NEXT_PUBLIC_PHONE_CODE || '+17188711234';
 
   return (
-    <a href={href || '#'} className={className}>
-      {label || 'Click to call'}
+    <a href={`tel:${phoneCode}`} className={className}>
+      {phone}
     </a>
   );
 }

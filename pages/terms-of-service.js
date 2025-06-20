@@ -8,8 +8,8 @@ export default function AccessibilityPage() {
             <Seo
                 title={`Terms of Service | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service/`}
             />
 
             <Breadcrumbs />
@@ -20,7 +20,7 @@ export default function AccessibilityPage() {
 
                     <h3 id="terms-and-conditions">TERMS AND CONDITIONS</h3>
                     <p>
-                        By submitting any form on this website, you agree to receive communications, including emails, phone calls, and text messages, at the number you provided. These may be delivered via automated systems or prerecorded messages. Your consent is voluntary and not a prerequisite for purchase. You can revoke it at any time by replying “STOP.”
+                        By submitting any form on this website, you agree to receive communications, including emails, phone calls, and text messages, at the number you provided. These may be delivered via automated systems or prerecorded messages. Your consent is voluntary and not a prerequisite for purchase. You can revoke it at any time by replying "STOP."
                     </p>
 
                     <h3 id="submission-forms">SUBMISSION FORMS</h3>
@@ -39,7 +39,7 @@ export default function AccessibilityPage() {
 
                     <h3 id="consent-to-terms-privacy">CONSENT TO TERMS &amp; PRIVACY</h3>
                     <p>
-                        Your privacy matters to us, and we’re committed to safeguarding it online. By clicking “SUBMIT,” you confirm you’ve reviewed and agreed to our Terms of Service and Privacy Policy. You consent to be contacted through email, phone, text, and postal mail. You may opt out anytime upon request.
+                        Your privacy matters to us, and we're committed to safeguarding it online. By clicking "SUBMIT," you confirm you've reviewed and agreed to our Terms of Service and Privacy Policy. You consent to be contacted through email, phone, text, and postal mail. You may opt out anytime upon request.
                     </p>
 
                     <h3 id="general">GENERAL</h3>
@@ -60,7 +60,7 @@ export default function AccessibilityPage() {
 
                     <h3 id="disclaimer-of-warranties">DISCLAIMER OF WARRANTIES</h3>
                     <p>
-                        All materials and information on this website are provided “AS IS” without any guarantee, either express or implied. We do not warrant the accuracy, completeness, or timeliness of the content and have no obligation to keep it current.
+                        All materials and information on this website are provided "AS IS" without any guarantee, either express or implied. We do not warrant the accuracy, completeness, or timeliness of the content and have no obligation to keep it current.
                     </p>
                     <p>
                         Our total liability, if any, shall not exceed the amount you paid for accessing the site.

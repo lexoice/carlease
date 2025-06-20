@@ -14,8 +14,8 @@ export default function TradeInsPage() {
             <Seo
                 title={`Lease Transfers in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Easily transfer your car lease in Philadelphia with help from ${process.env.NEXT_PUBLIC_SITE_NAME}. Avoid early termination fees and get expert guidance every step of the way.`}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-transfer`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-transfer`}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-transfer/`}
+                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/lease-transfer/`}
             />
 
             <Breadcrumbs />
