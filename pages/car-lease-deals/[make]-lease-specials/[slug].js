@@ -1,5 +1,5 @@
 import React from 'react'
-import Seo from '../../../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../../../components/UI/Breadcrumbs'
 import SingleCarLease from '../../../components/CarSection/SingleCarLease'
 
@@ -10,11 +10,10 @@ export default function CarDetailPage({ ssrCar, make }) {
 
   return (
     <>
-      <Seo
+      <NextSeo
         title={`Best car lease for ${ssrCar?.title} · ${process.env.NEXT_PUBLIC_SITE_NAME}`}
         description={`Get the best ${ssrCar?.title} lease offers from ${process.env.NEXT_PUBLIC_SITE_NAME}. Access exclusive deals on reduced-price lease vehicles, monthly specials, and hard-to-find limited-time discounts. Flexible short- and long-term leasing options. Top car lease offers in Philadelphia. Many of our best deals are not listed online.`}
         canonical={canonicalUrl}
-        ogUrl={canonicalUrl}
       />
 
       <Breadcrumbs />

@@ -1,5 +1,4 @@
 import '../public/style.css'
-import Script from 'next/script'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 import Header from '../components/Layout/Header'
@@ -9,6 +8,7 @@ import Modal from '../components/UI/Modal'
 import ChatWidget from '../components/UI/ChatWidget'
 import FixedQuoteButton from '../components/UI/FixedQuoteButton'
 import { Analytics } from "@vercel/analytics/next"
+
 
 
 function MyApp({ Component, pageProps, makes }) {

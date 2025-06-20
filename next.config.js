@@ -15,7 +15,7 @@ module.exports = {
   },
   async redirects() {
     return [
-      // Перенаправляем дублированные URL на правильные
+
       {
         source: '/car-lease-deals/:make-lease-specials-lease-specials/:path*',
         destination: '/car-lease-deals/:make-lease-specials/:path*/',
@@ -26,7 +26,7 @@ module.exports = {
         destination: '/car-lease-deals/:make-lease-specials/',
         permanent: true,
       },
-      // Обрабатываем множественные дублирования
+
       {
         source: '/car-lease-deals/:make-lease-specials-lease-specials-lease-specials/:path*',
         destination: '/car-lease-deals/:make-lease-specials/:path*/',

@@ -1,15 +1,14 @@
 import React from 'react'
-import Seo from '../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 
 export default function AccessibilityPage() {
     return (
         <>
-            <Seo
+            <NextSeo
                 title={`Code of Ethics | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`NADA's Code of Ethics is designed to reinforce dealers' including a personal commitment to quality service and high ethical standards.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/code-of-ethics/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/code-of-ethics/`}
             />
 
             <Breadcrumbs />

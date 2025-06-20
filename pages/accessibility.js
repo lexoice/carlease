@@ -1,16 +1,15 @@
 import React from 'react'
-import Seo from '../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 import PhoneLink from '../components/UI/PhoneLink'
 
 export default function AccessibilityPage() {
     return (
         <>
-            <Seo
+            <NextSeo
                 title={`Accessibility | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Instant cash for your trade-in or used car. Same-day pick-up and guaranteed fair offer from ${process.env.NEXT_PUBLIC_SITE_NAME}. No hidden fees.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/accessibility/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/accessibility/`}
             />
 
             <Breadcrumbs />

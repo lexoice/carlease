@@ -1,7 +1,5 @@
-// pages/services/trade-ins.js
-
 import React from 'react'
-import Seo from '../../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import SingleCarForm from '../../components/SingleCarForm'
 import MakeList from '../../components/Home/MakeList'
@@ -11,12 +9,10 @@ import PhoneLink from '../../components/UI/PhoneLink'
 export default function TradeInsPage() {
     return (
         <>
-            <Seo
+            <NextSeo
                 title={`Auto Financing Options in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Explore flexible car lease financing in Philadelphia with ${process.env.NEXT_PUBLIC_SITE_NAME}. Fast approvals, low interest rates, and personalized terms to match your budget—no hidden fees.`}
-
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/auto-finance/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/auto-finance/`}
             />
 
             <Breadcrumbs />

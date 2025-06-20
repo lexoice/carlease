@@ -1,15 +1,14 @@
 import React from 'react'
-import Seo from '../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 
 export default function AccessibilityPage() {
     return (
         <>
-            <Seo
+            <NextSeo
                 title={`Privacy Policy | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy/`}
             />
 
             <Breadcrumbs />

@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import Seo from '../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
+import DealerSection from '../components/Home/DealerSection'
+import MakeList from '../components/Home/MakeList'
 
 export default function ApplicationPage() {
     const [formType, setFormType] = useState('personal')
@@ -11,7 +13,7 @@ export default function ApplicationPage() {
 
     return (
         <>
-            <Seo
+            <NextSeo
                 title={
                     formType === 'personal'
                         ? `Personal Credit Application | ${process.env.NEXT_PUBLIC_SITE_NAME}`
@@ -19,7 +21,6 @@ export default function ApplicationPage() {
                 }
                 description={`Fill out our secure credit application and get a quote from ${process.env.NEXT_PUBLIC_SITE_NAME}.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/application/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/application/`}
             />
 
             <Breadcrumbs />
@@ -78,6 +79,8 @@ export default function ApplicationPage() {
                     </div>
                 </div>
             </section>
+            <DealerSection />
+            <MakeList />
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Seo from '../../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import CarSection from '../../components/CarSection/CarSection'
 import { getMakes } from '../../lib/api/getMakes'
@@ -7,11 +7,11 @@ import { getMakes } from '../../lib/api/getMakes'
 export default function CarLeaseDealsPage({ initialDeals, total, makes }) {
   return (
     <>
-      <Seo
+
+      <NextSeo
         title={`Auto Leasing in Philadelphia | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
-        description="Discover the best car lease deals in Philadelphia. Drive the vehicle you want at a monthly payment you can afford. Flexible terms and $0 down options available."
+        description={`Discover the best car lease deals in Philadelphia. Drive the vehicle you want at a monthly payment you can afford. Flexible terms and $0 down options available.`}
         canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/`}
-        ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/car-lease-deals/`}
       />
 
       <Breadcrumbs />

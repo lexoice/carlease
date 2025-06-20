@@ -1,5 +1,5 @@
 import React from 'react'
-import Seo from '../../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../../components/UI/Breadcrumbs'
 import CarDealsByFilter from '../../components/CarSection/CarDealsByFilter'
 import { getMakes } from '../../lib/api/getMakes'
@@ -18,11 +18,10 @@ export default function DealsByFilterPage({
 
   return (
     <>
-      <Seo
+      <NextSeo
         title={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials · Monthly Lease Specials (New) · ${process.env.NEXT_PUBLIC_SITE_NAME}`}
         description={`${base.charAt(0).toUpperCase() + base.slice(1)} Lease Specials in Philadelphia at ${process.env.NEXT_PUBLIC_SITE_NAME}: Get access to exclusive lease offers, limited-time discounts, and top monthly specials. Short-term and long-term leasing available. Best car lease deals in Philadelphia. Affordable pricing and offers you won’t find listed elsewhere.`}
         canonical={canonicalUrl}
-        ogUrl={canonicalUrl}
       />
 
       <Breadcrumbs />

@@ -1,15 +1,14 @@
 import React from 'react'
-import Seo from '../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 
 export default function ServicesPage() {
     return (
         <>
-            <Seo
+            <NextSeo
                 title={`Services | Monthly Lease Specials (New) | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Discover the best short-term car lease deals in NYC and surrounding areas for personal and business use. Lease with Philadelphia's top auto-leasing company and unlock exclusive offers in Philadelphia's .`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/services/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/services/`}
             />
 
             <Breadcrumbs />

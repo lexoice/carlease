@@ -1,4 +1,4 @@
-import Seo from '../components/UI/Seo'
+import { NextSeo } from 'next-seo'
 import Breadcrumbs from '../components/UI/Breadcrumbs'
 import SingleCarForm from '../components/SingleCarForm'
 import MakeList from '../components/Home/MakeList'
@@ -7,11 +7,10 @@ import PhoneLink from '../components/UI/PhoneLink'
 export default function ContactPage() {
     return (
         <>
-            <Seo
+            <NextSeo
                 title={`Contact Us | ${process.env.NEXT_PUBLIC_SITE_NAME}`}
                 description={`Explore the best car leasing deals in NYC and nearby areas for personal and business use. Find the cheapest short-term car leases from Philadelphia top auto leasing company. Unlock exclusive offers and rebates in Brooklyn, Queens, Staten Island, Long Island, and the Bronx.`}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/contact/`}
-                ogUrl={`${process.env.NEXT_PUBLIC_SITE_URL}/contact/`}
             />
 
 

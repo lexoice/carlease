@@ -1,7 +1,6 @@
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import MakeList from "../components/Home/MakeList";
-import Link from "next/link";
-import SingleCarForm from "../components/SingleCarForm";
+
 
 export default function Custom404() {
     return (
